@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc -t revealjs -s slides.md -o slides.html)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

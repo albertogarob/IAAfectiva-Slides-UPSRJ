@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Del Perceptrón a la Ciencia Moderna</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/night.css" id="theme" />
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/notes/notes.js"></script>
+    <style>
+        body,
+        .reveal .slides {
+            background-color: black;
+            color: white;
+        }
+
+        /* Video compartido, grande y bien posicionado */
+        #sharedVideo {
+            position: fixed;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95vw;
+            height: auto;
+            max-height: 80vh;
+            z-index: 10;
+            background: black;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            display: none;
+        }
+
+        /* Solo aplica el layout de título arriba a los slides que contienen video */
+        .reveal .slides section[data-video] {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 0px;
+            height: 100%;
+            text-align: center;
+        }
+
+        /* Títulos y subtítulos bien ubicados y encima del video */
+        .reveal h2,
+        .reveal h3,
+        .reveal h4 {
+            margin: 0.25em 0;
+            padding: 0;
+            z-index: 20;
+        }
+
+        /* Listas y párrafos: margen superior y encima del video */
+        .reveal p,
+        .reveal ul {
+            margin-top: 1em;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h2>Del Perceptrón a la Ciencia Moderna:<br>La Evolución de la Inteligencia Artificial</h2>
+                <h3>Dr. Alberto García Robledo</h3>
+                <h4>Universidad Anáhuac Querétaro</h4>
+                <h4>2 de mayo de 2025</h4>
+            </section>
+            
+            <section>
+                <h2>Los albores de la IA</h2>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="0" data-end="17">
+                <h2>Introducción</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>La inteligencia artificial, o IA, es un campo de estudio dentro de la informática que busca
+                            crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana.
+                        </li>
+                        <li>Estas tareas incluyen cosas como el reconocimiento de voz, la toma de decisiones, la
+                            traducción de idiomas, y el aprendizaje a partir de datos.</li>
+                        <li>El término "inteligencia artificial" fue acuñado en 1956 durante la conferencia de
+                            Dartmouth, donde un grupo de científicos se reunió para explorar la idea de que una máquina
+                            podía simular la inteligencia humana.</li>
+                        <li>Desde entonces, el campo ha evolucionado enormemente, pasando de reglas lógicas simples a
+                            redes neuronales complejas y modelos generativos como ChatGPT.</li>
+                        <li>Hoy en día, hablamos de IA en muchas formas: desde asistentes virtuales como Siri y Alexa,
+                            hasta sistemas de recomendación, vehículos autónomos y modelos que pueden generar texto,
+                            imágenes o música.</li>
+                        <li>La IA no es una tecnología única, sino un conjunto de técnicas y enfoques que permiten a las
+                            máquinas aprender, razonar y adaptarse.</li>
+                        <li>En esta presentación vamos a recorrer los hitos históricos, los conceptos fundamentales, y
+                            los debates éticos y sociales que giran en torno a la inteligencia artificial.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="51" data-end="61">
+                <h2>Las redes neuronales artificiales</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Después del perceptrón, surgió la idea de que una sola neurona artificial tenía
+                            limitaciones. Por eso, se propuso conectar muchas de ellas en capas: así nacen las redes
+                            neuronales artificiales.</li>
+                        <li>Una neurona artificial es una función matemática que toma varias entradas, les asigna pesos,
+                            las combina y pasa el resultado por una función de activación.</li>
+                        <li>Esta idea se basa en una analogía simplificada de cómo funcionan las neuronas biológicas:
+                            reciben señales, las procesan, y si se supera un umbral, “disparan”.</li>
+                        <li>Al conectar muchas neuronas artificiales en una red —con capas de entrada, ocultas y salida—
+                            obtenemos una red neuronal capaz de aprender patrones complejos.</li>
+                        <li>Durante el entrenamiento, la red ajusta los pesos de las conexiones para minimizar el error
+                            en sus predicciones. Este proceso se conoce como aprendizaje supervisado.</li>
+                        <li>Con suficientes capas y datos, estas redes pueden aproximar funciones muy complejas: por eso
+                            decimos que son "modelos universales de aproximación".</li>
+                        <li>Las redes neuronales modernas se utilizan en visión por computadora, procesamiento de
+                            lenguaje natural, predicción de series temporales, y mucho más.</li>
+                        <li>Esto marca el inicio de una nueva etapa en la inteligencia artificial: el aprendizaje
+                            profundo o "deep learning".</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="36" data-end="49">
+                <h2>El perceptrón de Rossenblatt (1957)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>El Perceptrón fue desarrollado en 1957 por Frank Rosenblatt, un psicólogo estadounidense
+                            interesado en modelar el aprendizaje humano.</li>
+                        <li>Rosenblatt diseñó el perceptrón como un modelo computacional inspirado en las neuronas
+                            biológicas.</li>
+                        <li>Es considerado uno de los primeros algoritmos de aprendizaje supervisado, capaz de
+                            clasificar entradas en dos categorías.</li>
+                        <li>Su funcionamiento se basa en una combinación lineal de entradas, que se activan o no
+                            dependiendo de un umbral.</li>
+                        <li>Rosenblatt implementó físicamente el perceptrón en una computadora llamada MARK I, que usaba
+                            tarjetas perforadas y actuadores mecánicos para aprender.</li>
+                        <li>En su momento, se pensó que el perceptrón podría llegar a resolver cualquier tipo de
+                            problema cognitivo. El entusiasmo fue enorme.</li>
+                    </ul>
+                </aside>
+            </section>
+            
+            <section data-video="videos/OR.mp4" data-start="62" data-end="89">
+                <h2>El perceptrón Mark I (1958)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>La máquina Perceptron Mark I fue construida en 1958 en el Laboratorio Aeronáutico de
+                            Cornell, bajo la dirección de Frank Rosenblatt.</li>
+                        <li>Fue la primera implementación física del modelo de perceptrón, combinando componentes
+                            electrónicos con mecanismos ópticos.</li>
+                        <li>Utilizaba una matriz de sensores fotoeléctricos para captar patrones visuales desde tarjetas
+                            perforadas.</li>
+                        <li>El sistema tenía un conjunto de pesos ajustables conectados a motores, que eran modificados
+                            físicamente durante el proceso de aprendizaje.</li>
+                        <li>La salida del sistema era binaria: podía tomar decisiones simples como clasificar formas
+                            geométricas en dos categorías.</li>
+                        <li>Lo innovador fue que podía aprender de ejemplos, ajustando sus pesos con cada nueva entrada
+                            y salida esperada.</li>
+                        <li>En su época, la prensa anunció el perceptrón como el comienzo de máquinas que podrían
+                            caminar, hablar e incluso ser conscientes.</li>
+                        <li>Aunque estas afirmaciones fueron exageradas, el Perceptron Mark I representó un hito: fue la
+                            primera máquina en aprender por sí misma a partir de datos.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="91" data-end="101">
+                <h2>El perceptrón en los medios</h2>
+                <aside class="notes">
+                    [Leer la nota del NYT]
+                </aside>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="118" data-end="167">
+                <h2>Clasificando rostros</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Una de las aplicaciones más emblemáticas del Perceptron Mark I fue la clasificación de
+                            rostros humanos.</li>
+                        <li>Se le alimentaban imágenes simplificadas de rostros a través de tarjetas perforadas o
+                            patrones proyectados sobre una matriz de sensores ópticos.</li>
+                        <li>El sistema convertía la información visual en señales eléctricas que eran procesadas por la
+                            red de pesos del perceptrón.</li>
+                        <li>Aprendía a distinguir entre dos clases: por ejemplo, rostros masculinos y femeninos, o
+                            rostros conocidos y desconocidos.</li>
+                        <li>El aprendizaje se lograba ajustando automáticamente los pesos de las conexiones cada vez que
+                            cometía un error en la clasificación.</li>
+                        <li>Aunque los rostros eran representaciones muy rudimentarias en blanco y negro, este
+                            experimento mostró el potencial del aprendizaje automático.</li>
+                        <li>Este tipo de tarea —reconocimiento visual— sigue siendo uno de los pilares de la
+                            inteligencia artificial actual, pero en ese momento fue revolucionario.</li>
+                        <li>El experimento contribuyó a la percepción de que las máquinas podrían “ver” y tomar
+                            decisiones, generando grandes expectativas sobre la IA.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="169" data-end="183">
+                <h2>"Perceptrons" de Minsky (1969)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Sin embargo, en 1969, Marvin Minsky y Seymour Papert publicaron el libro "Perceptrons", en
+                            el que presentaron una demostración matemática sobre las limitaciones de los perceptrones de
+                            dos capas con propagación hacia adelante, como su imposibilidad de modelar la función
+                            no-lineal XOR, así como afirmaciones no comprobadas sobre la dificultad de entrenar
+                            perceptrones de múltiples capas.</li>
+                        <li>El único resultado demostrado del libro —que las funciones lineales no pueden modelar
+                            funciones no lineales— era trivial, pero aun así, la obra tuvo un efecto pronunciado en el
+                            financiamiento de la investigación y, en consecuencia, en la comunidad científica por más de
+                            una década, en un periodo conocido como el primer "invierno de la IA".</li>
+                        <li>A pesar de sus limitaciones, el perceptrón es la base de las redes neuronales modernas.
+                            Representa un hito histórico en el camino hacia el aprendizaje automático.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>La resurrección de las redes neuronales</h2>
+            </section>
+
+            <section data-video="videos/OR.mp4" data-start="203" data-end="209">
+                <h2>Backpropagation (1986)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Uno de los momentos más importantes en la historia de las redes neuronales ocurrió en 1986,
+                            cuando David Rumelhart, Geoffrey Hinton y Ronald Williams publicaron un paper fundamental.
+                        </li>
+                        <li>El artículo se tituló *Learning representations by back-propagating errors*, y revivió el
+                            interés en las redes neuronales, que había decaído desde las críticas al perceptrón.</li>
+                        <li>En él, se describía con claridad y eficiencia un algoritmo conocido como *retropropagación
+                            del error* o *backpropagation*.</li>
+                        <li>Este algoritmo permite ajustar los pesos de todas las capas de una red neuronal, no solo de
+                            la última capa, resolviendo una de las grandes limitaciones del perceptrón multicapa.</li>
+                        <li>La clave está en calcular el gradiente del error a través de la red usando la regla de la
+                            cadena del cálculo diferencial.</li>
+                        <li>Gracias al backpropagation, fue posible entrenar redes profundas con múltiples capas
+                            ocultas, algo esencial para el desarrollo posterior del deep learning.</li>
+                        <li>El paper de 1986 marcó el inicio de una segunda ola de interés en las redes neuronales, que
+                            con el tiempo desembocaría en los avances que vemos hoy en día con modelos como GPT y redes
+                            convolucionales.</li>
+                        <li>Geoffrey Hinton, uno de los autores, es hoy considerado uno de los padres del aprendizaje
+                            profundo, y su trabajo ha influido en toda una generación de investigadores en IA.</li>
+                    </ul>
+                </aside>
+            </section>
+            <section data-video="videos/YE.mp4" data-start="65" data-end="84">
+                <h2>Sistemas Expertos (80s)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Tras las críticas al perceptrón y el primer "invierno de la IA" en los años 70, la comunidad
+                            científica buscó nuevas rutas más pragmáticas.</li>
+                        <li>Así surgió un enfoque basado en el conocimiento explícito: los sistemas expertos.</li>
+                        <li>Un sistema experto es un programa que emula el razonamiento de un especialista humano en un
+                            dominio concreto, usando una base de reglas "si-entonces".</li>
+                        <li>Ejemplos famosos fueron MYCIN, que ayudaba a diagnosticar infecciones bacterianas, o
+                            DENDRAL, usado en química orgánica para identificar estructuras moleculares.</li>
+                        <li>Estos sistemas fueron exitosos en dominios restringidos y estructurados, y por un tiempo se
+                            pensó que marcarían el camino hacia una inteligencia artificial práctica.</li>
+                        <li>Sin embargo, tenían serias limitaciones: no podían aprender, dependían de expertos humanos
+                            para codificar su conocimiento, y eran frágiles ante información ambigua.</li>
+                        <li>Con el tiempo, los costos de desarrollo crecieron, los resultados no cumplieron las
+                            expectativas, y muchas empresas retiraron su inversión en IA.</li>
+                        <li>Esto llevó al llamado segundo "invierno de la IA" a finales de los años 80 e inicios de los
+                            90, cuando el entusiasmo disminuyó y la financiación se redujo nuevamente.</li>
+                        <li>Paradójicamente, fue durante ese periodo que algunos investigadores, como Hinton, siguieron
+                            trabajando en redes neuronales, preparando el terreno para el renacimiento del aprendizaje
+                            profundo décadas después.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/YE.mp4" data-start="88" data-end="115">
+                <h2>Las redes en la oscuridad (90s-2000s)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Aunque el entusiasmo por las redes neuronales disminuyó tras los inviernos de la IA, la
+                            investigación no se detuvo.</li>
+                        <li>Durante los años 80, 90 y 2000, un pequeño grupo de investigadores —entre ellos Geoffrey
+                            Hinton, Yann LeCun y Yoshua Bengio— siguió explorando estos modelos.</li>
+                        <li>Uno de los avances más concretos fue la aplicación de redes neuronales convolucionales a la
+                            detección de caracteres escritos a mano, especialmente dígitos.</li>
+                        <li>Yann LeCun desarrolló una de las primeras redes convolucionales exitosas: LeNet, utilizada
+                            por el banco estadounidense AT&T para reconocer cheques bancarios.</li>
+                        <li>Este fue uno de los primeros casos reales en los que una red neuronal superó a los métodos
+                            tradicionales en tareas de visión por computadora.</li>
+                        <li>A pesar de estos logros, en la academia y la industria aún dominaban enfoques más
+                            interpretables como los árboles de decisión, métodos bayesianos, y máquinas de soporte
+                            vectorial (SVM).</li>
+                        <li>Las redes neuronales eran consideradas difíciles de entrenar, costosas computacionalmente y
+                            propensas a caer en mínimos locales.</li>
+                        <li>Además, el hardware de la época y la disponibilidad limitada de datos restringían su
+                            potencial.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/YE.mp4" data-start="125" data-end="146">
+                <h2>Redes neuronales profundas (2010s)</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Sin embargo, durante ese tiempo se desarrollaron muchas de las ideas clave que permitirían
+                            el resurgimiento del aprendizaje profundo una década más tarde.</li>
+                        <li>Estas investigaciones fueron cruciales para preparar el camino del deep learning actual.
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/YE.mp4" data-start="180" data-end="207">
+                <h2>Más datos y más procesamiento</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>A partir de la década de 2010, el campo de la inteligencia artificial vivió un nuevo punto
+                            de inflexión, impulsado por dos factores clave.</li>
+                        <li>Por un lado, la cantidad de información generada por la humanidad creció de manera
+                            exponencial: imágenes, texto, audio, video, datos de sensores, interacciones en redes
+                            sociales, etc.</li>
+                        <li>Este volumen masivo de datos, muchas veces etiquetado y disponible en línea, representó un
+                            combustible ideal para entrenar modelos de aprendizaje profundo.</li>
+                        <li>Por otro lado, el desarrollo de unidades de procesamiento gráfico —los famosos GPUs—
+                            permitió acelerar drásticamente los cálculos necesarios para entrenar redes neuronales.</li>
+                        <li>Los GPUs, originalmente diseñados para videojuegos, demostraron ser excelentes para realizar
+                            operaciones matemáticas en paralelo, como multiplicaciones de matrices y funciones de
+                            activación.</li>
+                        <li>Esta combinación de grandes volúmenes de datos y poder computacional abrió la puerta a
+                            arquitecturas mucho más profundas y complejas: las llamadas redes neuronales profundas o
+                            deep learning.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/YE.mp4" data-start="213" data-end="228">
+                <h2>El aprendizaje profundo es el hoy</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Actualmente, el deep learning ha permitido resolver tareas que antes eran inalcanzables para
+                            la IA tradicional, como el reconocimiento de imágenes con precisión superhumana o la
+                            generación de lenguaje natural coherente.</li>
+                        <li>Así, lo que durante décadas fue una línea de investigación marginal, se convirtió en el
+                            núcleo del renacimiento moderno de la inteligencia artificial.</li>
+                        <li>Este cambio de paradigma no fue solo técnico, sino también cultural: la comunidad
+                            científica, la industria y la sociedad en general volvieron a creer en el potencial
+                            transformador de la IA.</li>
+                    </ul>
+                </aside>
+            </section>
+            
+            <section>
+                <h2>Deep Learning 1.0: Aprendizaje Supervisado</h2>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="131" data-end="145">
+                <h2>Resolviendo problemas específicos</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Antes del auge de los modelos generales y multitarea, las redes neuronales —especialmente
+                            las convolucionales— se entrenaban para resolver tareas muy específicas.</li>
+                        <li>Un ejemplo clásico es el diagnóstico automatizado de enfermedades en hojas de plantas
+                            mediante visión por computadora.</li>
+                        <li>Se recolectaban miles de imágenes de hojas, divididas en categorías como “sana” y “enferma”,
+                            según síntomas visibles como manchas, cambios de color o textura.</li>
+                        <li>Estas imágenes servían como conjunto de entrenamiento para una red neuronal convolucional, o
+                            CNN, especializada en análisis de imágenes.</li>
+                        <li>Las CNN están diseñadas para detectar patrones visuales como bordes, texturas y formas en
+                            diferentes niveles de complejidad mediante capas convolucionales sucesivas.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="146" data-end="155">
+                <h2>Entrenando para una sola tarea</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Durante el entrenamiento, la red ajusta sus filtros internos para aprender las
+                            características que distinguen una hoja enferma de una sana.</li>
+                        <li>El objetivo no era crear una IA general, sino un sistema altamente eficaz para una tarea
+                            concreta: clasificar imágenes de hojas en dos clases.</li>
+                        <li>Este enfoque funcionaba bien siempre que se dispusiera de datos etiquetados de buena
+                            calidad, y que el problema estuviera bien acotado.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="165" data-end="174">
+                <h2>Entrenando para una sola tarea</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Una de las limitaciones clave de este enfoque tradicional es que el modelo solo sirve para
+                            la tarea exacta para la que fue entrenado.</li>
+                        <li>Por ejemplo, una red neuronal convolucional entrenada para distinguir hojas enfermas de
+                            sanas no puede reutilizarse para detectar frutas maduras, plagas o maleza.</li>
+                        <li>Esto se debe a que las CNN aprenden representaciones específicas del dominio y del tipo de
+                            datos con los que fueron entrenadas.</li>
+                        <li>No tienen una comprensión general del mundo visual: lo que saben está restringido al
+                            conjunto de entrenamiento y sus etiquetas.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="209" data-end="214">
+                <h2>Etiquetado: Somos el cuello de botella</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Otro gran desafío del enfoque tradicional es la necesidad de datos etiquetados, lo cual
+                            introduce un cuello de botella humano.</li>
+                        <li>Para entrenar una red neuronal convolucional, necesitamos miles o incluso millones de
+                            ejemplos correctamente clasificados.</li>
+                        <li>En nuestro ejemplo de hojas, eso implica que un experto debe revisar una por una las
+                            imágenes y decir si la hoja está sana o enferma.</li>
+                        <li>Este proceso es lento, costoso y no siempre escalable, especialmente cuando se trata de
+                            datos especializados que requieren juicio experto.</li>
+                        <li>Además, el etiquetado manual es propenso a errores, puede haber inconsistencias entre
+                            etiquetadores, o sesgos en los criterios utilizados.</li>
+                        <li>El problema se agrava cuando queremos aplicar el modelo a nuevas clases o dominios, lo cual
+                            requiere recolectar y etiquetar más datos desde cero.</li>
+                        <li>En muchos casos, el mayor costo del desarrollo de modelos de IA no está en el cómputo, sino
+                            en el tiempo humano necesario para preparar los datos.</li>
+                        <li>Esta dependencia del etiquetado manual es uno de los factores que limitan la velocidad y
+                            escalabilidad de los sistemas de IA clásicos.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="240" data-end="251">
+                <h2>Preentrenando una red neuronal</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Otro enfoque es preentrenar una red neuronal. Este preentrenamiento permite que la red
+                            aprenda representaciones generales del dominio, por ejemplo, patrones visuales comunes en
+                            imágenes naturales.</li>
+                        <li>Una vez preentrenada, la red puede adaptarse a diferentes tareas con una cantidad mucho
+                            menor de datos específicos y con menos esfuerzo de etiquetado.</li>
+                        <li>Por ejemplo, una red fundacional entrenada con millones de imágenes de plantas puede luego
+                            afinarse para detectar enfermedades en hojas, flores o frutos.</li>
+                    </ul>
+                </aside>
+            </section>
+            
+            <section data-video="videos/DL.mp4" data-start="258" data-end="265">
+                <h2>Afinando una red preentrenada</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>En lugar de entrenar desde cero, lo que se hace es un ajuste fino (*fine-tuning*) de los
+                            últimos niveles de la red, adaptándolos a la nueva tarea.</li>
+                        <li>Este enfoque reduce el tiempo de desarrollo, disminuye la dependencia de grandes volúmenes
+                            de datos etiquetados, y mejora la capacidad de generalización del modelo.</li>
+                        <li>Es un cambio de paradigma: pasamos de entrenar una red para cada problema, a construir
+                            modelos versátiles que pueden adaptarse a múltiples problemas con pequeñas modificaciones.
+                        </li>
+                        <li>Este principio es el que está detrás del concepto de "modelo fundacional" que se ha vuelto
+                            central en el discurso actual sobre inteligencia artificial.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="464" data-end="466">
+                <h2>Modelos fundacionales</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Un modelo fundacional es un modelo de gran escala, entrenado con cantidades masivas de
+                            datos, que sirve como base para resolver múltiples tareas posteriores.</li>
+                        <li>Lo que lo distingue es que no se entrena para una tarea específica, sino para aprender
+                            representaciones generales del dominio, ya sea texto, imágenes, audio o combinaciones
+                            multimodales.</li>
+                        <li>Estos modelos se entrenan usando técnicas como el aprendizaje auto-supervisado, donde no se
+                            requiere etiquetado humano explícito.</li>
+                        <li>Una vez preentrenados, se pueden adaptar —mediante fine-tuning o simplemente mediante
+                            instrucciones— a tareas concretas como traducción, clasificación, generación de texto,
+                            reconocimiento de imágenes, etc.</li>
+                        <li>Pero también plantea un reto importante: ¿cómo entrenarlos?.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Deep Learning 2.0: Aprendizaje Autosupervisado</h2>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="320" data-end="334">
+                <h2>NLP vs GPT</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Como se ha discutido antes, en el pasado, para cada tarea de procesamiento de lenguaje
+                            natural se entrenaba un modelo distinto desde cero.</li>
+                        <li>Había un modelo para traducción automática, otro para análisis de sentimiento, otro para
+                            detección de spam, otro para respuestas a preguntas, etc.</li>
+                        <li>Esto implicaba una enorme duplicación de esfuerzos, ya que cada modelo requería su propio
+                            conjunto de datos, arquitectura y ajuste fino.</li>
+                        <li>Todo esto cambió con la llegada de los modelos de lenguaje grande, o LLMs, como GPT, BERT y
+                            T5.</li>
+                        <li>GPT y modelos similares representan una nueva era del NLP: modelos generalistas, capaces de
+                            abordar múltiples tareas con el mismo núcleo entrenado.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="345" data-end="367">
+                <h2>GANs vs Midjourney</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Un fenómeno similar al de los modelos de lenguaje ocurre en el campo de la generación de
+                            imágenes.</li>
+                        <li>Antes, los modelos generativos eran altamente especializados: uno entrenado para generar
+                            rostros, otro para pájaros, otro para paisajes, etc.</li>
+                        <li>Estos modelos, como Redes Generativas Adversarias (GANs) entrenadas con datasets
+                            específicos, tenían buen desempeño, pero no podían generalizar fuera de su dominio.</li>
+                        <li>Esto implicaba que si querías generar un nuevo tipo de objeto —por ejemplo, flores o escenas
+                            de ciencia ficción— debías entrenar un nuevo modelo desde cero.</li>
+                        <li>Hoy eso ha cambiado radicalmente con la llegada de modelos generativos multimodales y
+                            generalistas, como MidJourney, DALL·E o Stable Diffusion.</li>
+                        <li>Estos modelos se entrenan con enormes cantidades de imágenes emparejadas con descripciones
+                            en lenguaje natural, lo que les permite aprender relaciones complejas entre texto e imagen.
+                        </li>
+                        <li>Gracias a esto, pueden generar prácticamente cualquier tipo de imagen a partir de una simple
+                            instrucción textual: “un retrato en estilo renacentista de un gato leyendo poesía”.</li>
+                        <li>Ya no necesitamos un modelo por cada dominio visual; ahora un solo modelo puede cubrir una
+                            enorme variedad de estilos, objetos y contextos.</li>
+                    </ul>
+                </aside>
+            </section>
+            <section data-video="videos/DL.mp4" data-start="404" data-end="410">
+                <h2>Autoaprendizaje</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Una de las claves técnicas detrás de los modelos modernos es el aprendizaje
+                            auto-supervisado, también conocido como autoaprendizaje.</li>
+                        <li>A diferencia del aprendizaje supervisado tradicional, donde se necesita un conjunto de datos
+                            etiquetado por humanos, el autoaprendizaje aprovecha patrones presentes en los datos sin
+                            requerir etiquetas explícitas.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="418" data-end="426">
+                <h2>Autoaprendizaje de texto</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>En el caso del lenguaje, por ejemplo, el modelo aprende a predecir la siguiente palabra en
+                            una oración, usando simplemente textos tomados de internet sin intervención humana directa.
+                        </li>
+                        <li>Este método genera sus propias "etiquetas" a partir del mismo dato: si tienes una frase
+                            incompleta, el modelo trata de completarla, y esa completación sirve como señal de
+                            entrenamiento.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="428" data-end="440">
+                <h2>Autoaprendizaje de imágenes</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>En el caso de imágenes, los modelos aprenden a relacionar una descripción textual con una
+                            imagen, o a reconstruir partes faltantes de una imagen, utilizando el propio contenido como
+                            guía.</li>
+                        <li>Esto permite entrenar con volúmenes masivos de datos sin depender del trabajo humano para
+                            etiquetarlos, lo que elimina uno de los mayores cuellos de botella del aprendizaje
+                            supervisado.</li>
+                        <li>El autoaprendizaje permite construir representaciones generales y versátiles, que luego
+                            pueden reutilizarse para múltiples tareas diferentes sin necesidad de entrenar un modelo
+                            desde cero cada vez.</li>
+                        <li>En resumen, el autoaprendizaje es el motor silencioso que impulsa muchos de los avances
+                            recientes en inteligencia artificial generalista.</li>
+                        <li>Gracias a este enfoque, los modelos pueden aprender del mundo tal como es, no solo de las
+                            partes que los humanos han clasificado previamente.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="507" data-end="519">
+                <h2>Entrenando con datos autogenerados</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Una tendencia emergente en el desarrollo de inteligencia artificial es el uso de datos
+                            sintéticos generados por modelos para entrenar otros modelos.</li>
+                        <li>Estos datos no provienen del mundo real, sino que son producidos artificialmente por modelos
+                            fundacionales ya entrenados, como GPT, DALL·E o generadores de simulaciones.</li>
+                        <li>Esto abre nuevas posibilidades, especialmente cuando los datos reales son escasos, costosos
+                            de obtener o difíciles de etiquetar.</li>
+                        <li>Por ejemplo, un modelo de lenguaje puede generar miles de ejemplos de preguntas y respuestas
+                            para entrenar otro modelo más pequeño especializado en tutoría educativa.</li>
+                        <li>En visión por computadora, se pueden generar imágenes sintéticas con anotaciones automáticas
+                            para entrenar modelos de detección de objetos o clasificación.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="528" data-end="540">
+                <h2>Entrenando con datos autogenerados</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Este enfoque puede acelerar el desarrollo de sistemas de IA, reducir la dependencia de
+                            humanos en el etiquetado y permitir experimentación en dominios donde los datos reales son
+                            sensibles o inaccesibles.</li>
+                        <li>Sin embargo, también hay riesgos: los datos generados pueden introducir sesgos o errores
+                            sistemáticos que se amplifican al entrenar nuevos modelos.</li>
+                        <li>Además, si los modelos son entrenados solo con datos sintéticos, pueden perder la capacidad
+                            de generalizar al mundo real si esos datos no son representativos.</li>
+                        <li>Por eso, una estrategia común es combinar datos reales con sintéticos, aprovechando lo mejor
+                            de ambos mundos.</li>
+                        <li>En resumen, el uso de datos generados por modelos representa una nueva frontera en la IA,
+                            con un gran potencial y desafíos por resolver.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="561" data-end="576">
+                <h2>Somos los nuevos etiquetadores</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Una forma interesante y poco visible en que ayudamos al entrenamiento de modelos es a través
+                            de nuestras propias interacciones con ellos.</li>
+                        <li>Hoy en día, muchas plataformas de IA recogen retroalimentación implícita o explícita por
+                            parte de los usuarios.</li>
+                        <li>Por ejemplo, cuando usamos generadores de imágenes como MidJourney o DALL·E, y seleccionamos
+                            la imagen que más nos gusta, estamos enviando una señal valiosa al sistema.</li>
+                        <li>De manera similar, cuando ChatGPT nos ofrece dos respuestas y elegimos la que consideramos
+                            mejor, estamos etiquetando datos que luego pueden usarse para afinar o entrenar modelos
+                            futuros.</li>
+                        <li>Este tipo de retroalimentación se conoce como aprendizaje por refuerzo con retroalimentación
+                            humana (RLHF, por sus siglas en inglés).</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="594" data-end="598">
+                <h2>Somos los nuevos etiquetadores</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Es una técnica cada vez más importante, ya que permite adaptar modelos de lenguaje y visión
+                            a preferencias humanas, sin requerir anotaciones tradicionales.</li>
+                        <li>De alguna forma, todos nos hemos convertido en “etiquetadores distribuidos” sin siquiera
+                            darnos cuenta: cada clic, selección o preferencia alimenta el entrenamiento de nuevos
+                            sistemas.</li>
+                        <li>Esto hace que los modelos mejoren continuamente, alineándose con lo que los usuarios
+                            consideran más útil, estético o correcto.</li>
+                        <li>Pero también plantea preguntas éticas sobre consentimiento, privacidad y el uso de nuestras
+                            decisiones para moldear el comportamiento de la IA.</li>
+                        <li>En resumen, el entrenamiento de modelos modernos no solo depende de grandes centros de
+                            datos, sino también de nuestras interacciones cotidianas.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Deep Learning 3.0: Aprendizaje por Refuerzo</h2>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="799" data-end="805">
+                <h2>El aprendizaje por refuerzo</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>El aprendizaje por refuerzo es uno de los enfoques más antiguos y prometedores dentro de la
+                            inteligencia artificial.</li>
+                        <li>Se basa en un principio simple pero poderoso: un agente aprende a tomar decisiones en un
+                            entorno, recibiendo recompensas por acciones que lo acercan a sus objetivos.</li>
+                        <li>En lugar de aprender a partir de ejemplos etiquetados como en el aprendizaje supervisado,
+                            aquí el agente aprende mediante prueba y error.</li>
+                        <li>Este enfoque ha sido estudiado durante décadas, con bases teóricas sólidas en campos como la
+                            teoría de control, la neurociencia y la psicología conductista.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="818" data-end="843">
+                <h2>El aprendizaje por refuerzo</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>El aprendizaje por refuerzo ha sido fundamental en logros emblemáticos de la IA, como
+                            AlphaGo, que venció a campeones humanos en el juego de Go.</li>
+                        <li>También ha sido aplicado en robótica, juegos, navegación autónoma, finanzas y más
+                            recientemente, en la afinación de modelos de lenguaje como ChatGPT a través del RLHF.</li>
+                        <li>Hoy en día, el aprendizaje por refuerzo se considera una de las claves para avanzar hacia
+                            sistemas más autónomos, capaces de aprender por sí mismos a través de la interacción con el
+                            entorno.</li>
+                        <li>Se perfila como una vía fundamental para lograr inteligencia artificial general, que no solo
+                            reconozca patrones, sino que también actúe de forma adaptativa en contextos complejos.</li>
+                        <li>En ese sentido, el aprendizaje por refuerzo no es solo un enfoque técnico más, sino una
+                            visión de largo plazo sobre cómo podrían aprender las máquinas en el futuro.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="848" data-end="864">
+                <h2>De cero a héroe: AlphaZero</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Uno de los ejemplos más impresionantes del poder del aprendizaje por refuerzo es AlphaZero,
+                            desarrollado por DeepMind.</li>
+                        <li>A diferencia de sus predecesores, AlphaZero no fue programado con conocimientos específicos
+                            sobre ajedrez, shogi o Go.</li>
+                        <li>Aprendió desde cero únicamente jugando contra sí mismo, guiado por las reglas del juego y
+                            una señal de recompensa: ganar o perder.</li>
+                        <li>Usó una combinación de aprendizaje por refuerzo profundo y búsqueda Monte Carlo para evaluar
+                            posiciones y tomar decisiones.</li>
+                        <li>En tan solo unas horas de entrenamiento, AlphaZero superó a los mejores motores existentes,
+                            como Stockfish en ajedrez y Elmo en shogi.</li>
+                        <li>En el caso del Go, un juego mucho más complejo que el ajedrez, AlphaZero heredó los avances
+                            de AlphaGo, pero con aún mayor autonomía.</li>
+                        <li>Lo sorprendente es que desarrolló estilos de juego creativos, no humanos, y descubrió
+                            estrategias que antes no se conocían, redefiniendo lo que se entendía como “jugar bien”.
+                        </li>
+                        <li>Este logro demostró que el aprendizaje por refuerzo, combinado con redes neuronales
+                            profundas, puede generar comportamientos altamente inteligentes sin intervención humana
+                            directa.</li>
+                    </ul>
+                </aside>
+            </section>
+            <section data-video="videos/DL.mp4" data-start="906" data-end="920">
+                <h2>Expandiendo el conocimiento humano</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>El <strong>aprendizaje supervisado</strong> y el <strong>auto-supervisado</strong> dependen
+                            directamente de los datos de entrenamiento: su conocimiento se limita a lo que ya está
+                            presente en esos datos.</li>
+                        <li>Incluso los modelos más avanzados, como los modelos de lenguaje grande, generan resultados
+                            combinando y extrapolando patrones aprendidos de datos preexistentes.</li>
+                        <li>En cambio, el <strong>aprendizaje por refuerzo</strong> no se limita a imitar patrones
+                            previos: explora, actúa, experimenta y aprende a través de la interacción con su entorno.
+                        </li>
+                        <li>Esto le permite generar estrategias nuevas y descubrir soluciones no contenidas en los datos
+                            originales.</li>
+                        <li>Un ejemplo claro es AlphaZero: no aprendió a jugar como los humanos, sino que desarrolló
+                            formas inéditas de jugar ajedrez o Go, muchas veces sorprendentes incluso para los expertos.
+                        </li>
+                        <li>Esta capacidad de <strong>explorar más allá de los datos</strong> convierte al RL en un
+                            enfoque potencialmente transformador para generar conocimiento nuevo en ciencia, ingeniería
+                            y otros dominios creativos.</li>
+                        <li>El RL no solo predice lo que es probable; puede crear lo que nunca se ha visto, guiado por
+                            la lógica de la recompensa, la exploración y la optimización.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="928" data-end="943">
+                <h2>Datos = Experiencia</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Una razón fundamental por la cual el aprendizaje por refuerzo puede trascender los límites
+                            de los datos estáticos es que, en este enfoque, <strong>los datos se vuelven
+                                experiencia</strong>.</li>
+                        <li>A diferencia del aprendizaje supervisado, donde el modelo aprende a partir de un conjunto de
+                            datos previamente etiquetado y fijo, en el aprendizaje por refuerzo el agente aprende
+                            interactuando con el entorno.</li>
+                        <li>Cada acción tomada por el agente genera nuevas observaciones, nuevas consecuencias y nuevas
+                            recompensas. Así, el agente crea su propio conjunto de entrenamiento mientras explora.</li>
+                        <li>Esto transforma la naturaleza del aprendizaje: <strong>el agente no solo consume datos, los
+                                produce a través de su comportamiento y decisiones</strong>.</li>
+                        <li>Este ciclo de acción → observación → actualización permite una forma de aprendizaje
+                            continuo, adaptativo y potencialmente creativo.</li>
+                        <li>Por eso, el aprendizaje por refuerzo no está atado a replicar lo que ya se sabe, sino que
+                            puede descubrir nuevas estrategias, nuevas soluciones y nuevos patrones a partir de la
+                            interacción con su entorno.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="959" data-end="989">
+                <h2>Aprendizaje por refuerzo y simulación</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Un factor fundamental que ha potenciado el aprendizaje por refuerzo en la práctica es el uso
+                            de <strong>simulaciones digitales</strong>.</li>
+                        <li>Las simulaciones permiten crear entornos artificiales donde los agentes pueden aprender,
+                            explorar y fallar millones de veces sin consecuencias reales.</li>
+                        <li>Esto es especialmente importante en contextos donde experimentar en el mundo físico sería
+                            lento, costoso o incluso peligroso, como en robótica, física o medicina.</li>
+                        <li>Por ejemplo, AlphaGo jugó millones de partidas contra sí mismo en simulación antes de vencer
+                            al campeón mundial de Go.</li>
+                        <li>Las simulaciones también permiten generar entornos altamente controlados, donde se pueden
+                            repetir condiciones exactas, variar parámetros, o probar escenarios extremos.</li>
+                        <li>Esto facilita no solo el aprendizaje, sino también la evaluación y el diseño de estrategias
+                            más robustas y generalizables.</li>
+                        <li>Además, muchas simulaciones se pueden paralelizar: se ejecutan miles de instancias al mismo
+                            tiempo, acelerando significativamente el proceso de entrenamiento.</li>
+                        <li>Así, las simulaciones convierten el aprendizaje por refuerzo en una herramienta escalable y
+                            segura, abriendo la puerta a aplicaciones en ciencia, ingeniería, automatización y sistemas
+                            autónomos.</li>
+                        <li>Son el campo de juego donde los agentes artificiales pueden experimentar libremente, antes
+                            de actuar en el mundo real.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="990" data-end="1023">
+                <h2>Robots que aprenden por sí mismos</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Uno de los avances más sorprendentes del aprendizaje por refuerzo es su aplicación en
+                            <strong>robots que aprenden por sí mismos a moverse e interactuar en el mundo real</strong>.
+                        </li>
+                        <li>A diferencia de enfoques que requieren simulaciones extensas o programación detallada de
+                            movimientos, estos robots <strong>aprenden directamente en entornos físicos reales</strong>.
+                        </li>
+                        <li>Por ejemplo, algunos robots han aprendido a <strong>agarrar objetos de distintas formas,
+                                materiales y posiciones</strong>, sin instrucciones específicas, solo explorando y
+                            ajustando su comportamiento con base en la experiencia.</li>
+                        <li>En otro caso reciente, robots cuadrúpedos han aprendido a <strong>caminar desde cero y por
+                                sí mismos en el mundo físico</strong>, sin usar simulación previa ni datos humanos de
+                            referencia.</li>
+                        <li>Lo más impresionante es que este proceso de aprendizaje, que antes tomaba días o semanas,
+                            ahora puede realizarse en <strong>cuestión de horas</strong>.</li>
+                        <li>Durante el proceso, el robot prueba distintos patrones de movimiento, evalúa los resultados
+                            y ajusta sus acciones hasta lograr una locomoción estable y eficiente.</li>
+                        <li>También es capaz de adaptarse a terrenos irregulares, recuperar el equilibrio si cae o
+                            modificar su estrategia si se encuentra con un obstáculo.</li>
+                        <li>Esto representa un gran paso hacia sistemas robóticos más adaptables, robustos y útiles en
+                            situaciones reales, donde los entornos no siempre son predecibles ni estructurados.</li>
+                        <li>Estamos presenciando una nueva generación de robots que <strong>aprenden como los organismos
+                                vivos: mediante interacción real, experiencia y mejora continua</strong>.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="1081" data-end="1114">
+                <h2>Robótica y LLMs</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Un área de investigación cada vez más activa es la combinación de <strong>modelos de
+                                lenguaje grande (LLMs)</strong> con <strong>sistemas robóticos</strong>.</li>
+                        <li>El objetivo es lograr que los robots puedan <strong>entender instrucciones en lenguaje
+                                natural</strong> y traducirlas en acciones físicas concretas en el entorno.</li>
+                        <li>Por ejemplo, en lugar de programar comandos específicos, un usuario podría simplemente
+                            decir: “Trae el vaso que está sobre la mesa” o “Guarda los juguetes en la caja”.</li>
+                        <li>Un LLM como GPT puede procesar esa instrucción, comprender la intención y generar una
+                            representación intermedia que el sistema robótico pueda ejecutar.</li>
+                        <li>Esto requiere conectar el lenguaje con la percepción (visión, sensores) y con el control
+                            motor del robot, lo cual plantea desafíos técnicos importantes, pero también enormes
+                            oportunidades.</li>
+                        <li>Esto abre la puerta a <strong>robots más intuitivos y colaborativos</strong>, capaces de
+                            adaptarse a personas sin conocimientos técnicos, y útiles en hogares, hospitales, fábricas y
+                            espacios públicos.</li>
+                        <li>La clave está en que el lenguaje natural se convierte en una interfaz universal, permitiendo
+                            que la comunicación con máquinas sea más fluida, accesible y eficiente.</li>
+                        <li>Esta integración entre LLMs y robótica representa uno de los pasos más importantes hacia
+                            sistemas de inteligencia artificial verdaderamente interactivos y sociales.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Conclusión</h2>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="873" data-end="888">
+                <h2>Expandiendo el conocimiento humano</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Para concluir, veamos cómo la inteligencia artificial ha comenzado no solo a resolver
+                            problemas técnicos, sino a <strong>expandir el conocimiento humano</strong> de formas antes
+                            impensables.</li>
+                        <li>Un ejemplo destacado es <strong>MuZero</strong>, una evolución de AlphaZero, aplicado por
+                            DeepMind en colaboración con Google para mejorar la <strong>compresión de video en
+                                YouTube</strong>.</li>
+                        <li>El sistema aprendió a tomar decisiones sobre cómo comprimir distintos segmentos del video
+                            dependiendo de su contenido visual y nivel de detalle necesario.</li>
+                        <li>También tenemos el caso de <strong>AlphaTensor</strong>, otro sistema de DeepMind que
+                            utilizó RL para descubrir nuevos algoritmos de multiplicación de matrices, superando los
+                            algoritmos clásicos en eficiencia para ciertos tamaños.</li>
+                        <li>Y en física, el RL está siendo utilizado para controlar los <strong>campos magnéticos en
+                                reactores de fusión nuclear</strong>, como los tokamaks.</li>
+                        <li>Estos imanes deben confinar el plasma caliente sin que toque las paredes del reactor. El RL
+                            permite ajustar los imanes en tiempo real, manteniendo la estabilidad del sistema de forma
+                            autónoma.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="1208" data-end="1227">
+                <h2>Expandiendo el conocimiento humano</h2>
+                <aside class="notes">
+                    <ul>
+                        <li><strong>AlphaDev</strong>, también de DeepMind, optimizó algoritmos fundamentales como los
+                            de ordenamiento, generando código más eficiente que el diseñado por humanos y compiladores
+                            tradicionales.</li>
+                        <li><strong>AlphaFold</strong> revolucionó la biología al predecir la estructura de más de 200
+                            millones de proteínas, acelerando investigaciones en medicina, farmacología y biotecnología.
+                        </li>
+                        <li>Estos casos muestran que la IA ya no es solo una herramienta de automatización, sino una
+                            <strong>fuerza creativa y exploratoria</strong> capaz de generar conocimiento nuevo.</li>
+                        <li>Lo más sorprendente es que ya estamos viendo <strong>IA diseñando otras IA</strong>: desde
+                            algoritmos que generan nuevas arquitecturas neuronales hasta modelos que buscan estrategias
+                            óptimas de entrenamiento o diseño de hardware.</li>
+                        <li>Esto inaugura una era de <strong>inteligencia artificial auto-mejorable</strong>, donde los
+                            avances se aceleran y amplifican mediante procesos automáticos de descubrimiento.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-video="videos/DL.mp4" data-start="1251" data-end="1265">
+                <h2>Expandiendo el conocimiento humano</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>El impacto va más allá de la informática: <strong>la IA se está convirtiendo en un
+                                catalizador del progreso científico</strong> en física, química, matemáticas,
+                            ingeniería, economía, educación y muchas otras disciplinas.</li>
+                        <li>Su capacidad para analizar grandes volúmenes de datos, simular fenómenos complejos y
+                            proponer soluciones creativas está redefiniendo la manera en que hacemos ciencia y
+                            tecnología.</li>
+                        <li>En resumen, estamos entrando en una etapa donde la colaboración entre inteligencia humana y
+                            artificial puede <strong>potenciar el desarrollo de todo el conocimiento humano</strong>.
+                        </li>
+                        <li>Y lo más emocionante es que esto es solo el comienzo.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>¡Gracias por su atención!</h2>
+            </section>
+
+
+        </div> <!-- Cierre de .slides -->
+    </div> <!-- Cierre de .reveal -->
+
+    <!-- Video compartido -->
+    <video id="sharedVideo" preload="auto" muted></video>
+
+    <!-- Scripts Reveal.js -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'fade',
+            width: '100%',
+            height: '100%',
+            plugins: [RevealNotes],
+            lazyLoad: true
+        });
+
+        const video = document.getElementById('sharedVideo');
+        let currentVideoSrc = '';
+
+        Reveal.on('slidechanged', (event) => {
+            const slide = event.currentSlide;
+            const videoSrc = slide.getAttribute('data-video');
+            const start = parseFloat(slide.getAttribute('data-start'));
+            const end = parseFloat(slide.getAttribute('data-end'));
+
+            if (videoSrc && !isNaN(start) && !isNaN(end)) {
+                video.style.display = 'block';
+
+                if (videoSrc !== currentVideoSrc) {
+                    video.src = videoSrc;
+                    currentVideoSrc = videoSrc;
+                    video.load();
+                    video.addEventListener('loadedmetadata', () => {
+                        video.currentTime = start;
+                        video.play();
+                    }, { once: true });
+                } else {
+                    video.currentTime = start;
+                    video.play();
+                }
+
+                video.ontimeupdate = () => {
+                    if (video.currentTime >= end) {
+                        video.currentTime = start;
+                        video.play(); // ← Reinicia y reproduce de nuevo el segmento
+                    }
+                };
+            } else {
+                video.pause();
+                video.style.display = 'none';
+            }
+        });
+
+        // Para el primer slide (inicio)
+        window.addEventListener('load', () => {
+            const firstSlide = document.querySelector('.reveal .slides section');
+            if (firstSlide) {
+                const videoSrc = firstSlide.getAttribute('data-video');
+                const start = parseFloat(firstSlide.getAttribute('data-start'));
+                const end = parseFloat(firstSlide.getAttribute('data-end'));
+
+                if (videoSrc && !isNaN(start) && !isNaN(end)) {
+                    video.src = videoSrc;
+                    currentVideoSrc = videoSrc;
+                    video.load();
+                    video.addEventListener('loadedmetadata', () => {
+                        video.currentTime = start;
+                        video.play();
+                    }, { once: true });
+
+                    video.ontimeupdate = () => {
+                        if (video.currentTime >= end) {
+                            video.pause();
+                        }
+                    };
+
+                    video.style.display = 'block';
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
