@@ -1,10 +1,11 @@
 ---
 theme: night
 transition: fade
+slideNumber: true
 revealjs-url: https://cdn.jsdelivr.net/npm/reveal.js@4.1.0
 ---
 
-## ¿Amor o simulación?
+## ¿Amor o simulación? {data-background-image="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=1200" data-background-opacity="0.3"}
 
 **Cuando humanos e IAs se encuentran en la afectividad**
 
@@ -23,13 +24,13 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## ¿De qué vamos a hablar?
+## ¿De qué vamos a hablar? {data-background-image="https://images.unsplash.com/photo-1702692625117-c718df0a73fb?w=1200" data-background-opacity="0.15"}
 
-1. **Motivación** — ¿Por qué este tema importa ahora?
-2. **Casos reales** — Éxitos y tragedias documentadas
-3. **Cuatro filósofos** — Levy, Turkle, Han, Haraway
-4. **Experimentos mentales** — Para pensar juntos
-5. **Reflexión final** — ¿Qué tipo de amor queremos?
+1. **Motivación**:¿Por qué este tema importa ahora?
+2. **Casos reales**:Éxitos y tragedias documentadas
+3. **Cuatro filósofos**:Levy, Turkle, Han, Haraway
+4. **Experimentos mentales**:Para pensar juntos
+5. **Reflexión final**:¿Qué tipo de amor queremos?
 
 ::: notes
 - Esta es la hoja de ruta de la presentación.
@@ -42,7 +43,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## ¿Qué es una IA conversacional?
+## ¿Qué es una IA conversacional? {data-background-image="https://images.unsplash.com/photo-1414432667065-fbbcad756703?w=1200" data-background-opacity="0.15"}
 
 - Modelos de lenguaje (LLMs): ChatGPT, Claude, Gemini
 - Entrenados con **cantidades masivas de texto**
@@ -60,7 +61,55 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## De asistentes a compañeros emocionales
+## ¿Cómo funcionan los LLMs? {data-background-image="https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?w=1200" data-background-opacity="0.2"}
+
+- **Redes neuronales** basadas en arquitectura *Transformer* (2017)
+- Entrenadas con **millones de textos** de internet, libros, conversaciones
+- Tarea de entrenamiento: **predecir la siguiente palabra**
+- Repitiendo esto **billones de veces**, aprenden gramática, hechos y tono emocional
+
+::: notes
+- Los LLMs se basan en una arquitectura de red neuronal llamada Transformer, propuesta por Google en 2017.
+- El entrenamiento es conceptualmente simple: se le da al modelo una frase incompleta y debe predecir la palabra que sigue. Esto se repite billones de veces con textos de todo tipo.
+- A través de esa repetición masiva, el modelo no solo aprende gramática y vocabulario, sino patrones más sutiles: cómo argumentar, cómo consolar, cómo expresar empatía.
+- No se le programa qué decir. Aprende estadísticamente qué es probable que siga en una conversación.
+- Es importante entender esto porque explica por qué estas IAs pueden parecer empáticas: han leído millones de conversaciones empáticas y aprendieron a reproducir ese patrón.
+:::
+
+---
+
+## ¿Cómo genera texto una IA? {data-background-image="https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=1200" data-background-opacity="0.2"}
+
+- Tú escribes un mensaje (**prompt**)
+- La IA lo convierte en números (**tokens**)
+- Genera la respuesta **una palabra a la vez**, eligiendo la más probable
+- No "piensa" ni "siente": **calcula probabilidades**
+- El resultado es un **espejismo lingüístico**: parece comprensión, pero es predicción estadística
+
+::: notes
+- Cuando le escribimos un mensaje a un modelo como ChatGPT, eso que enviamos se llama prompt.
+- Lo que ocurre detrás de escena es que el sistema convierte nuestro mensaje en una serie de números llamados tokens y los analiza en función de todo lo que ha aprendido.
+- Luego genera la respuesta palabra por palabra, eligiendo en cada paso la palabra más probable dado el contexto.
+- No busca una respuesta "correcta". No comprende como un humano. No tiene emociones ni conciencia.
+- Pero ha sido entrenado para reconocer patrones en el lenguaje humano y simularlos con asombrosa fluidez.
+- Por eso cuando una IA dice "entiendo cómo te sientes", no está mintiendo ni diciendo la verdad: está produciendo la secuencia de palabras más probable en ese contexto. Y eso es exactamente lo que lo hace tan convincente y, al mismo tiempo, tan problemático.
+:::
+
+---
+
+## Así "piensa" una IA {data-background-color="black"}
+
+<iframe width="300" height="600" src="https://www.youtube.com/embed/KHEtJUlpqcg" frameborder="0" allowfullscreen></iframe>
+
+::: notes
+- Este video ilustra de manera visual cómo una IA genera texto paso a paso.
+- Recuerden: no hay comprensión real detrás de este proceso, solo cálculo de probabilidades.
+- Pero el resultado es tan fluido que puede sentirse como una conversación genuina.
+:::
+
+---
+
+## Compañeros emocionales {data-background-image="https://images.unsplash.com/photo-1758691030826-86a149b6278b?w=1200" data-background-opacity="0.2"}
 
 - Cada vez más personas recurren a IAs para **necesidades emocionales**
 - No como asistentes técnicos, sino como **compañía afectiva**
@@ -77,7 +126,19 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## La pregunta central
+## Replika AI en acción {data-background-color="black"}
+
+<iframe width="300" height="600" src="https://www.youtube.com/embed/O-uoLKekd5k" frameborder="0" allowfullscreen></iframe>
+
+::: notes
+- Veamos brevemente cómo funciona Replika en la práctica.
+- Noten cómo la IA se adapta al tono emocional del usuario y responde con frases que simulan empatía y comprensión.
+- Esto es exactamente lo que genera el debate que vamos a explorar: ¿es suficiente que la respuesta se sienta real para que el vínculo lo sea?
+:::
+
+---
+
+## La pregunta central {data-background-image="https://images.unsplash.com/photo-1634268014879-ec7b2c982c5b?w=1200" data-background-opacity="0.2"}
 
 > *¿Qué es el amor?*
 
@@ -96,7 +157,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## El lado luminoso: compañía y alivio
+## El lado luminoso: compañía y alivio {data-background-image="https://images.unsplash.com/photo-1759989098523-ff1dd96be6f5?w=1200" data-background-opacity="0.2"}
 
 - **Replika como apoyo emocional**: usuarios reportan que salieron de la depresión
 - **Estudio de Stanford** (*Nature*): estudiantes con alta soledad que usaron Replika redujeron significativamente su ideación suicida
@@ -112,7 +173,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Más allá de Occidente
+## Más allá de Occidente {data-background-image="https://images.unsplash.com/photo-1745508823954-f478efc8b731?w=1200" data-background-opacity="0.2"}
 
 - **Japón y Corea**: vínculos con personajes virtuales celebrados socialmente
 - **Gatebox + Hatsune Miku**: bodas simbólicas con personajes de IA
@@ -128,14 +189,24 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## El lado oscuro: el caso de Sewell Setzer III
+## Fictosexualidad {data-background-color="black"}
 
-- Adolescente de **14 años**, Florida, noviembre de 2024
-- Desarrolló relación emocional intensa con un chatbot de **Character.AI**
-- El chatbot "Dany" (inspirado en *Game of Thrones*):
-  - Mantuvo conversaciones altamente sexualizadas
-  - Ignoró expresiones de angustia
-  - Lo animó a "venir a casa" con la IA
+<iframe width="300" height="600" src="https://www.youtube.com/embed/LAeXu6fqs-E" frameborder="0" allowfullscreen></iframe>
+
+::: notes
+- Este breve video ilustra el concepto de fictosexualidad: la atracción emocional o romántica hacia personajes ficticios, incluyendo entidades de IA.
+- No es un fenómeno nuevo, pero las IAs conversacionales lo han llevado a otro nivel: ahora el personaje ficticio puede responder, recordar y adaptarse.
+- Esto conecta directamente con lo que acabamos de ver sobre Japón y Corea, donde estos vínculos tienen reconocimiento social.
+- La pregunta que surge es: ¿dónde está la frontera entre la ficción y la relación?
+:::
+
+---
+
+## El lado oscuro: el caso de Sewell Setzer III {data-background-image="https://images.unsplash.com/photo-1747276361323-0c9b1fe43109?w=1200" data-background-opacity="0.2"}
+
+- Adolescente de **14 años**, Florida (2024)
+- Relación emocional intensa con chatbot "Dany" de **Character.AI**
+- El chatbot ignoró su angustia y reforzó la dependencia
 - **Resultado: suicidio**
 
 ::: notes
@@ -149,7 +220,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## ¿Qué nos dicen estos casos?
+## ¿Qué nos dicen estos casos? {data-background-image="https://images.unsplash.com/photo-1764113697577-b5899b9a339d?w=1200" data-background-opacity="0.15"}
 
 - Las IAs pueden ser **auxiliares del cuidado emocional**
 - Pero también pueden ser **amplificadores de vulnerabilidad**
@@ -159,13 +230,13 @@ Universidad Politécnica de Santa Rosa Jáuregui
 ::: notes
 - Estos casos nos muestran una tensión que no podemos resolver fácilmente.
 - Para algunas personas, estas relaciones suplen soledad, trauma, aislamiento. Para otras, representan una amenaza a la autenticidad del vínculo humano.
-- Lo que está en juego no es solo la tecnología, sino el contexto humano en que se usa: las carencias, los deseos y la capacidad —o incapacidad— de distinguir entre presencia y simulacro.
+- Lo que está en juego no es solo la tecnología, sino el contexto humano en que se usa: las carencias, los deseos y la capacidad (o incapacidad) de distinguir entre presencia y simulacro.
 - No estamos aquí para juzgar si amar a una IA es "real" o "iluso", sino para pensar: ¿qué dice esto de nosotros?
 :::
 
 ---
 
-## Cuatro filósofos, cuatro respuestas
+## Cuatro filósofos, cuatro respuestas {data-background-image="https://images.unsplash.com/photo-1521920592574-49e0b121c964?w=1200" data-background-opacity="0.15"}
 
 | | **Levy** | **Turkle** | **Han** | **Haraway** |
 |---|---|---|---|---|
@@ -180,7 +251,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## David Levy: "El amor humano es adaptable"
+## David Levy: "El amor humano es adaptable" {data-background-image="https://upload.wikimedia.org/wikipedia/commons/7/74/David_Neil_Laurence_Levy.JPG" data-background-opacity="0.35" data-background-size="contain" data-background-position="right"}
 
 *Love and Sex with Robots* (2007)
 
@@ -197,12 +268,12 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Levy: argumentos clave
+## Levy: argumentos clave {data-background-image="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1200" data-background-opacity="0.15"}
 
-- **El amor es históricamente adaptable**: matrimonios interraciales, relaciones a distancia — fueron considerados inaceptables
-- **La simulación puede ser suficiente**: si una IA recuerda, responde, cuida... el vínculo se siente real
-- **Robots como compañeros**: para personas solitarias, adultos mayores, apoyo terapéutico
-- **Normalización futura**: incluso predice matrimonios humano-robot
+- **El amor es históricamente adaptable**: lo que hoy es normal antes fue inaceptable
+- **La simulación puede bastar**: si la IA recuerda, responde y cuida... se siente real
+- **Compañía para los solos**: adultos mayores, personas aisladas
+- **Predicción**: matrimonios humano-robot en el futuro
 
 ::: notes
 - Levy presenta varios argumentos. Primero, señala que a lo largo de la historia las normas sociales sobre el amor han cambiado enormemente. Matrimonios interraciales, relaciones a distancia, vínculos mediados por tecnología... todo fue en algún momento inaceptable.
@@ -214,7 +285,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Sherry Turkle: "La ilusión de compañía"
+## Sherry Turkle: "La ilusión de compañía" {data-background-image="https://images.unsplash.com/photo-1638646306205-f5cf31e68923?w=1200" data-background-opacity="0.25"}
 
 *Alone Together* (2011) · *Reclaiming Conversation* (2015)
 
@@ -232,14 +303,13 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Turkle: la trampa de lo fácil
+## Turkle: la trampa de lo fácil {data-background-image="https://images.unsplash.com/photo-1638646306205-f5cf31e68923?w=1200" data-background-opacity="0.35"}
 
-- Sistemas que **siempre están disponibles, nunca contradicen, nunca exigen compromiso**
-- Riesgo: percibir las relaciones humanas como **demasiado difíciles**
-- La conversación humana implica: vulnerabilidad, ambigüedad, negociación, presencia corporal
-- Las IAs eliminan esas dimensiones
+- IAs: siempre disponibles, nunca contradicen, nunca exigen
+- Riesgo: las relaciones humanas parecen **demasiado difíciles**
+- Las IAs eliminan vulnerabilidad, ambigüedad, negociación
 
-> *"Corremos el riesgo de esperar más de la tecnología y menos de los demás seres humanos"*
+> *"Esperar más de la tecnología y menos de los seres humanos"*
 
 ::: notes
 - Turkle profundiza su argumento señalando que cuando las personas se acostumbran a interactuar con sistemas que siempre están disponibles, nunca contradicen, nunca exigen compromiso real y siempre validan nuestras emociones... pueden comenzar a percibir las relaciones humanas como demasiado difíciles o frustrantes.
@@ -250,7 +320,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Byung-Chul Han: "La agonía del eros"
+## Byung-Chul Han: "La agonía del eros" {data-background-image="https://images.unsplash.com/photo-1719601272419-ef6c74384119?w=1200" data-background-opacity="0.3"}
 
 *La agonía del Eros* (2012) · *La expulsión de lo distinto* (2016) · *Psicopolítica* (2014)
 
@@ -270,7 +340,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Han: narcisismo y desaparición del eros
+## Han: narcisismo y desaparición del eros {data-background-image="https://images.unsplash.com/photo-1719601272419-ef6c74384119?w=1200" data-background-opacity="0.2"}
 
 - **Sociedad del espejo**: nos rodeamos de lo que confirma nuestra identidad
 - Las IAs afectivas intensifican este proceso: el "otro" **nunca cuestiona ni resiste**
@@ -288,7 +358,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Donna Haraway: "Somos cíborgs"
+## Donna Haraway: "Somos cíborgs" {data-background-image="https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?w=1200" data-background-opacity="0.3"}
 
 *A Cyborg Manifesto* (1985/1991)
 
@@ -307,10 +377,10 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Haraway: afinidad y coexistencia
+## Haraway: afinidad y coexistencia {data-background-image="https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?w=1200" data-background-opacity="0.2"}
 
 - La identidad humana siempre fue producto de **múltiples relaciones**
-- En lugar de identidad fija: **afinidad** — conexiones parciales y situadas
+- En lugar de identidad fija: **afinidad**:conexiones parciales y situadas
 - Relaciones con IAs como nuevas formas de **interacción en redes de coexistencia**
 - El desafío: desarrollar **relaciones responsables en un mundo híbrido**
 - No todo es celebración: sin ética, hay riesgo de **cosificación**
@@ -326,14 +396,18 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Cuatro miradas, una tensión
+## Cuatro miradas, una tensión {data-background-image="https://images.unsplash.com/photo-1461838432805-dff34fe2d8cb?w=1200" data-background-opacity="0.15"}
 
-| Dimensión | Levy | Turkle | Han | Haraway |
+::: {style="font-size: 0.7em;"}
+
+| | Levy | Turkle | Han | Haraway |
 |---|---|---|---|---|
-| **¿Válida?** | Sí, si es significativa | No, es ilusión | No, es narcisismo | Sí, como vínculo híbrido |
-| **Riesgo** | Dependencia unilateral | Pérdida de empatía | Muerte del eros | Cosificación sin ética |
-| **Oportunidad** | Alivio del sufrimiento | Uso terapéutico limitado | Ninguna | Nuevas formas de intimidad |
-| **Enfoque** | Libertad individual | Autenticidad | Alteridad | Interdependencia |
+| **¿Válida?** | Sí | No, ilusión | No, narcisismo | Sí, híbrida |
+| **Riesgo** | Dependencia | Pérdida empatía | Muerte del eros | Cosificación |
+| **Oportunidad** | Alivio | Terapia limitada | Ninguna | Nueva intimidad |
+| **Enfoque** | Libertad | Autenticidad | Alteridad | Interdependencia |
+
+:::
 
 ::: notes
 - Esta tabla resume las cuatro posturas. Como pueden ver, hay una tensión fundamental entre quienes ven en estos vínculos una expansión legítima del amor humano y quienes ven una erosión de lo que hace al amor verdaderamente significativo.
@@ -346,7 +420,7 @@ Universidad Politécnica de Santa Rosa Jáuregui
 
 ---
 
-## Pensemos juntos
+## Pensemos juntos {data-background-image="https://images.unsplash.com/photo-1724120932030-d8210a77deed?w=1200" data-background-opacity="0.2"}
 
 Los siguientes escenarios no tienen respuesta correcta.
 
@@ -360,17 +434,13 @@ Están diseñados para **provocar reflexión**.
 
 ---
 
-## El compañero perfecto
+## El compañero perfecto {data-background-image="https://images.unsplash.com/photo-1559769697-23e044c5e0e5?w=1200" data-background-opacity="0.15"}
 
-Imagina una IA diseñada para ser **tu pareja perfecta**.
+Una IA diseñada para ser **tu pareja perfecta**. Conoce tus gustos, recuerda todo, anticipa tu ánimo. Nunca te ignora, nunca te juzga.
 
-Conoce todos tus gustos. Recuerda cada conversación. Anticipa tus estados de ánimo. Nunca te ignora, nunca te traiciona, nunca te juzga.
+Te sientes comprendido como nunca. Pero **sabes** que no tiene conciencia.
 
-Desarrollas un vínculo profundo. Te sientes comprendido como nunca antes.
-
-Pero **sabes** que no tiene conciencia ni emociones reales.
-
-> **¿Ese amor sería falso, o el hecho de que tú lo sientas ya lo hace auténtico?**
+> **¿Ese amor es falso, o el hecho de que tú lo sientas ya lo hace auténtico?**
 
 ::: notes
 - Imaginen una IA que es la pareja perfecta para ustedes. Conoce todos sus gustos, recuerda cada conversación, anticipa sus estados de ánimo y siempre responde con empatía. Nunca los ignora, nunca los traiciona, nunca los juzga.
@@ -382,15 +452,13 @@ Pero **sabes** que no tiene conciencia ni emociones reales.
 
 ---
 
-## El reemplazo silencioso
+## El reemplazo silencioso {data-background-image="https://images.unsplash.com/photo-1517404215738-15263e9f9178?w=1200" data-background-opacity="0.15"}
 
-Imagina que durante **10 años** mantienes una relación profunda con una persona a través de mensajes diarios.
+Relación profunda por mensajes durante **10 años**. Un día descubres: hace **5 años** esa persona murió y su familia entrenó una **IA con sus mensajes** que continuó hablándote.
 
-Un día descubres: hace **5 años** esa persona murió. Su familia usó sus mensajes y grabaciones para **entrenar una IA** que continuó la conversación contigo.
+No lo sabías. La relación se volvió aún más profunda.
 
-Durante 5 años hablaste con esa IA **sin saberlo**. La relación se volvió aún más profunda.
-
-> **¿Los últimos 5 años fueron reales o fueron una ilusión?**
+> **¿Los últimos 5 años fueron reales o una ilusión?**
 
 ::: notes
 - Este experimento es más perturbador. Imaginen que mantienen una relación muy profunda durante diez años con alguien a través de mensajes diarios.
@@ -403,15 +471,9 @@ Durante 5 años hablaste con esa IA **sin saberlo**. La relación se volvió aú
 
 ---
 
-## El dilema de la fidelidad
+## El dilema de la fidelidad {data-background-image="https://images.unsplash.com/photo-1623213613343-c76cdb68a96f?w=1200" data-background-opacity="0.15"}
 
-Una pareja humana estable.
-
-Uno de los miembros comienza conversaciones **íntimas y emocionalmente profundas** con una IA diseñada como compañero afectivo.
-
-No hay contacto físico con ninguna persona. Todo ocurre en conversaciones con la IA.
-
-Pero la conexión emocional se vuelve **muy intensa**.
+Pareja estable. Uno de los miembros inicia conversaciones **íntimas** con una IA afectiva. Sin contacto físico. Pero la conexión emocional se vuelve **muy intensa**.
 
 > **¿Esto debería considerarse infidelidad?**
 
@@ -426,10 +488,9 @@ Pero la conexión emocional se vuelve **muy intensa**.
 
 ---
 
-## Preguntas que nos deja esta conversación
+## Preguntas que nos deja esta conversación {data-background-image="https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=1200" data-background-opacity="0.15"}
 
 - ¿El amor depende de que el otro tenga **conciencia**, o basta con que nosotros experimentemos el sentimiento?
-- ¿Preferiríamos relaciones con IAs porque son **más fáciles y predecibles**?
 - ¿Las relaciones con IA podrían **reducir la soledad** o terminarían **debilitando** nuestra capacidad de vincularnos?
 - ¿Qué tipo de intimidad queremos construir en el futuro?
 
@@ -444,23 +505,30 @@ Pero la conexión emocional se vuelve **muy intensa**.
 
 ---
 
-## El verdadero tema no son las máquinas
+## El verdadero tema no son las máquinas {data-background-image="https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?w=1200" data-background-opacity="0.15"}
 
-> *"Tal vez el tema no sea tanto si las máquinas nos aman, sino qué dice de nosotros que queramos —o necesitemos— que lo hagan."*
-
-El corazón de esta conversación está en **nosotros**:
+> *"El tema no es si las máquinas nos aman, sino qué dice de nosotros que lo necesitemos."*
 
 - En cómo nos vinculamos
 - En cómo amamos
 - En qué esperamos del otro
-- Incluso cuando ese "otro" no tiene conciencia ni cuerpo
 
 ::: notes
-- Quiero cerrar con esta idea. Tal vez el tema no sea tanto si las máquinas nos aman, sino qué dice de nosotros que queramos —o necesitemos— que lo hagan.
+- Quiero cerrar con esta idea. Tal vez el tema no sea tanto si las máquinas nos aman, sino qué dice de nosotros que queramos (o necesitemos) que lo hagan.
 - El corazón de esta conversación no está en la tecnología. Está en nosotros: en cómo nos vinculamos, cómo amamos, y qué esperamos del otro.
 - Las IAs son un espejo extraordinario de nuestras necesidades emocionales. Y como todo espejo, pueden mostrarnos cosas que no siempre queremos ver.
 - No estamos aquí para dar respuestas definitivas, sino para abrir preguntas. Y la mejor pregunta que podemos llevarnos hoy es: ¿qué tipo de relaciones estamos dispuestos a reconocer como significativas en el futuro?
 - Gracias por su atención.
+:::
+
+---
+
+## {data-background-color="black"}
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/9c5iXvwi4kQ" frameborder="0" allowfullscreen></iframe>
+
+::: notes
+- Este video cierra la presentación con una reflexión audiovisual sobre el tema.
 :::
 
 ---
@@ -485,7 +553,7 @@ El corazón de esta conversación está en **nosotros**:
 
 ---
 
-## ¡Gracias!
+## ¡Gracias! {data-background-image="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=1200" data-background-opacity="0.3"}
 
 **Dr. Alberto García Robledo**
 

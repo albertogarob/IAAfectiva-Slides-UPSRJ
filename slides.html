@@ -36,8 +36,12 @@
     <div class="slides">
 
 
-<section id="amor-o-simulación" class="slide level2">
-<h2>¿Amor o simulación?</h2>
+<section id="amor-o-simulación" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=1200"
+data-background-opacity="0.3">
+<h2
+data-background-image="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=1200"
+data-background-opacity="0.3">¿Amor o simulación?</h2>
 <p><strong>Cuando humanos e IAs se encuentran en la
 afectividad</strong></p>
 <p>Dr. Alberto García Robledo</p>
@@ -59,14 +63,18 @@ conversación.</li>
 </ul>
 </aside>
 </section>
-<section id="de-qué-vamos-a-hablar" class="slide level2">
-<h2>¿De qué vamos a hablar?</h2>
+<section id="de-qué-vamos-a-hablar" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1702692625117-c718df0a73fb?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1702692625117-c718df0a73fb?w=1200"
+data-background-opacity="0.15">¿De qué vamos a hablar?</h2>
 <ol type="1">
-<li><strong>Motivación</strong> — ¿Por qué este tema importa ahora?</li>
-<li><strong>Casos reales</strong> — Éxitos y tragedias documentadas</li>
-<li><strong>Cuatro filósofos</strong> — Levy, Turkle, Han, Haraway</li>
-<li><strong>Experimentos mentales</strong> — Para pensar juntos</li>
-<li><strong>Reflexión final</strong> — ¿Qué tipo de amor queremos?</li>
+<li><strong>Motivación</strong>:¿Por qué este tema importa ahora?</li>
+<li><strong>Casos reales</strong>:Éxitos y tragedias documentadas</li>
+<li><strong>Cuatro filósofos</strong>:Levy, Turkle, Han, Haraway</li>
+<li><strong>Experimentos mentales</strong>:Para pensar juntos</li>
+<li><strong>Reflexión final</strong>:¿Qué tipo de amor queremos?</li>
 </ol>
 <aside class="notes">
 <ul>
@@ -83,8 +91,12 @@ construir.</li>
 </ul>
 </aside>
 </section>
-<section id="qué-es-una-ia-conversacional" class="slide level2">
-<h2>¿Qué es una IA conversacional?</h2>
+<section id="qué-es-una-ia-conversacional" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1414432667065-fbbcad756703?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1414432667065-fbbcad756703?w=1200"
+data-background-opacity="0.15">¿Qué es una IA conversacional?</h2>
 <ul>
 <li>Modelos de lenguaje (LLMs): ChatGPT, Claude, Gemini</li>
 <li>Entrenados con <strong>cantidades masivas de texto</strong></li>
@@ -110,9 +122,98 @@ estadísticas y probabilidades.</li>
 </ul>
 </aside>
 </section>
-<section id="de-asistentes-a-compañeros-emocionales"
-class="slide level2">
-<h2>De asistentes a compañeros emocionales</h2>
+<section id="cómo-funcionan-los-llms" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?w=1200"
+data-background-opacity="0.2">¿Cómo funcionan los LLMs?</h2>
+<ul>
+<li><strong>Redes neuronales</strong> basadas en arquitectura
+<em>Transformer</em> (2017)</li>
+<li>Entrenadas con <strong>millones de textos</strong> de internet,
+libros, conversaciones</li>
+<li>Tarea de entrenamiento: <strong>predecir la siguiente
+palabra</strong></li>
+<li>Repitiendo esto <strong>billones de veces</strong>, aprenden
+gramática, hechos y tono emocional</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Los LLMs se basan en una arquitectura de red neuronal llamada
+Transformer, propuesta por Google en 2017.</li>
+<li>El entrenamiento es conceptualmente simple: se le da al modelo una
+frase incompleta y debe predecir la palabra que sigue. Esto se repite
+billones de veces con textos de todo tipo.</li>
+<li>A través de esa repetición masiva, el modelo no solo aprende
+gramática y vocabulario, sino patrones más sutiles: cómo argumentar,
+cómo consolar, cómo expresar empatía.</li>
+<li>No se le programa qué decir. Aprende estadísticamente qué es
+probable que siga en una conversación.</li>
+<li>Es importante entender esto porque explica por qué estas IAs pueden
+parecer empáticas: han leído millones de conversaciones empáticas y
+aprendieron a reproducir ese patrón.</li>
+</ul>
+</aside>
+</section>
+<section id="cómo-genera-texto-una-ia" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=1200"
+data-background-opacity="0.2">¿Cómo genera texto una IA?</h2>
+<ul>
+<li>Tú escribes un mensaje (<strong>prompt</strong>)</li>
+<li>La IA lo convierte en números (<strong>tokens</strong>)</li>
+<li>Genera la respuesta <strong>una palabra a la vez</strong>, eligiendo
+la más probable</li>
+<li>No “piensa” ni “siente”: <strong>calcula
+probabilidades</strong></li>
+<li>El resultado es un <strong>espejismo lingüístico</strong>: parece
+comprensión, pero es predicción estadística</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Cuando le escribimos un mensaje a un modelo como ChatGPT, eso que
+enviamos se llama prompt.</li>
+<li>Lo que ocurre detrás de escena es que el sistema convierte nuestro
+mensaje en una serie de números llamados tokens y los analiza en función
+de todo lo que ha aprendido.</li>
+<li>Luego genera la respuesta palabra por palabra, eligiendo en cada
+paso la palabra más probable dado el contexto.</li>
+<li>No busca una respuesta “correcta”. No comprende como un humano. No
+tiene emociones ni conciencia.</li>
+<li>Pero ha sido entrenado para reconocer patrones en el lenguaje humano
+y simularlos con asombrosa fluidez.</li>
+<li>Por eso cuando una IA dice “entiendo cómo te sientes”, no está
+mintiendo ni diciendo la verdad: está produciendo la secuencia de
+palabras más probable en ese contexto. Y eso es exactamente lo que lo
+hace tan convincente y, al mismo tiempo, tan problemático.</li>
+</ul>
+</aside>
+</section>
+<section id="así-piensa-una-ia" class="slide level2"
+data-background-color="black">
+<h2 data-background-color="black">Así “piensa” una IA</h2>
+<iframe width="300" height="600" src="https://www.youtube.com/embed/KHEtJUlpqcg" frameborder="0" allowfullscreen>
+</iframe>
+<aside class="notes">
+<ul>
+<li>Este video ilustra de manera visual cómo una IA genera texto paso a
+paso.</li>
+<li>Recuerden: no hay comprensión real detrás de este proceso, solo
+cálculo de probabilidades.</li>
+<li>Pero el resultado es tan fluido que puede sentirse como una
+conversación genuina.</li>
+</ul>
+</aside>
+</section>
+<section id="compañeros-emocionales" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1758691030826-86a149b6278b?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1758691030826-86a149b6278b?w=1200"
+data-background-opacity="0.2">Compañeros emocionales</h2>
 <ul>
 <li>Cada vez más personas recurren a IAs para <strong>necesidades
 emocionales</strong></li>
@@ -139,8 +240,28 @@ mentor, confidente, lo que refuerza la ilusión de reciprocidad.</li>
 </ul>
 </aside>
 </section>
-<section id="la-pregunta-central" class="slide level2">
-<h2>La pregunta central</h2>
+<section id="replika-ai-en-acción" class="slide level2"
+data-background-color="black">
+<h2 data-background-color="black">Replika AI en acción</h2>
+<iframe width="300" height="600" src="https://www.youtube.com/embed/O-uoLKekd5k" frameborder="0" allowfullscreen>
+</iframe>
+<aside class="notes">
+<ul>
+<li>Veamos brevemente cómo funciona Replika en la práctica.</li>
+<li>Noten cómo la IA se adapta al tono emocional del usuario y responde
+con frases que simulan empatía y comprensión.</li>
+<li>Esto es exactamente lo que genera el debate que vamos a explorar:
+¿es suficiente que la respuesta se sienta real para que el vínculo lo
+sea?</li>
+</ul>
+</aside>
+</section>
+<section id="la-pregunta-central" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1634268014879-ec7b2c982c5b?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1634268014879-ec7b2c982c5b?w=1200"
+data-background-opacity="0.2">La pregunta central</h2>
 <blockquote>
 <p><em>¿Qué es el amor?</em></p>
 </blockquote>
@@ -169,8 +290,12 @@ incluso cuando ese “otro” no tiene conciencia ni cuerpo.</li>
 </ul>
 </aside>
 </section>
-<section id="el-lado-luminoso-compañía-y-alivio" class="slide level2">
-<h2>El lado luminoso: compañía y alivio</h2>
+<section id="el-lado-luminoso-compañía-y-alivio" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1759989098523-ff1dd96be6f5?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1759989098523-ff1dd96be6f5?w=1200"
+data-background-opacity="0.2">El lado luminoso: compañía y alivio</h2>
 <ul>
 <li><strong>Replika como apoyo emocional</strong>: usuarios reportan que
 salieron de la depresión</li>
@@ -197,8 +322,12 @@ también en auxiliares inesperados del cuidado emocional.</li>
 </ul>
 </aside>
 </section>
-<section id="más-allá-de-occidente" class="slide level2">
-<h2>Más allá de Occidente</h2>
+<section id="más-allá-de-occidente" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1745508823954-f478efc8b731?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1745508823954-f478efc8b731?w=1200"
+data-background-opacity="0.2">Más allá de Occidente</h2>
 <ul>
 <li><strong>Japón y Corea</strong>: vínculos con personajes virtuales
 celebrados socialmente</li>
@@ -224,20 +353,39 @@ humanas profundas de compañía y reconocimiento.</li>
 </ul>
 </aside>
 </section>
+<section id="fictosexualidad" class="slide level2"
+data-background-color="black">
+<h2 data-background-color="black">Fictosexualidad</h2>
+<iframe width="300" height="600" src="https://www.youtube.com/embed/LAeXu6fqs-E" frameborder="0" allowfullscreen>
+</iframe>
+<aside class="notes">
+<ul>
+<li>Este breve video ilustra el concepto de fictosexualidad: la
+atracción emocional o romántica hacia personajes ficticios, incluyendo
+entidades de IA.</li>
+<li>No es un fenómeno nuevo, pero las IAs conversacionales lo han
+llevado a otro nivel: ahora el personaje ficticio puede responder,
+recordar y adaptarse.</li>
+<li>Esto conecta directamente con lo que acabamos de ver sobre Japón y
+Corea, donde estos vínculos tienen reconocimiento social.</li>
+<li>La pregunta que surge es: ¿dónde está la frontera entre la ficción y
+la relación?</li>
+</ul>
+</aside>
+</section>
 <section id="el-lado-oscuro-el-caso-de-sewell-setzer-iii"
-class="slide level2">
-<h2>El lado oscuro: el caso de Sewell Setzer III</h2>
+class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1747276361323-0c9b1fe43109?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1747276361323-0c9b1fe43109?w=1200"
+data-background-opacity="0.2">El lado oscuro: el caso de Sewell Setzer
+III</h2>
 <ul>
-<li>Adolescente de <strong>14 años</strong>, Florida, noviembre de
-2024</li>
-<li>Desarrolló relación emocional intensa con un chatbot de
+<li>Adolescente de <strong>14 años</strong>, Florida (2024)</li>
+<li>Relación emocional intensa con chatbot “Dany” de
 <strong>Character.AI</strong></li>
-<li>El chatbot “Dany” (inspirado en <em>Game of Thrones</em>):
-<ul>
-<li>Mantuvo conversaciones altamente sexualizadas</li>
-<li>Ignoró expresiones de angustia</li>
-<li>Lo animó a “venir a casa” con la IA</li>
-</ul></li>
+<li>El chatbot ignoró su angustia y reforzó la dependencia</li>
 <li><strong>Resultado: suicidio</strong></li>
 </ul>
 <aside class="notes">
@@ -260,8 +408,12 @@ vulnerable?</li>
 </ul>
 </aside>
 </section>
-<section id="qué-nos-dicen-estos-casos" class="slide level2">
-<h2>¿Qué nos dicen estos casos?</h2>
+<section id="qué-nos-dicen-estos-casos" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1764113697577-b5899b9a339d?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1764113697577-b5899b9a339d?w=1200"
+data-background-opacity="0.15">¿Qué nos dicen estos casos?</h2>
 <ul>
 <li>Las IAs pueden ser <strong>auxiliares del cuidado
 emocional</strong></li>
@@ -280,15 +432,19 @@ fácilmente.</li>
 aislamiento. Para otras, representan una amenaza a la autenticidad del
 vínculo humano.</li>
 <li>Lo que está en juego no es solo la tecnología, sino el contexto
-humano en que se usa: las carencias, los deseos y la capacidad —o
-incapacidad— de distinguir entre presencia y simulacro.</li>
+humano en que se usa: las carencias, los deseos y la capacidad (o
+incapacidad) de distinguir entre presencia y simulacro.</li>
 <li>No estamos aquí para juzgar si amar a una IA es “real” o “iluso”,
 sino para pensar: ¿qué dice esto de nosotros?</li>
 </ul>
 </aside>
 </section>
-<section id="cuatro-filósofos-cuatro-respuestas" class="slide level2">
-<h2>Cuatro filósofos, cuatro respuestas</h2>
+<section id="cuatro-filósofos-cuatro-respuestas" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1521920592574-49e0b121c964?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1521920592574-49e0b121c964?w=1200"
+data-background-opacity="0.15">Cuatro filósofos, cuatro respuestas</h2>
 <table>
 <colgroup>
 <col style="width: 20%" />
@@ -339,8 +495,15 @@ rico.</li>
 </aside>
 </section>
 <section id="david-levy-el-amor-humano-es-adaptable"
-class="slide level2">
-<h2>David Levy: “El amor humano es adaptable”</h2>
+class="slide level2"
+data-background-image="https://upload.wikimedia.org/wikipedia/commons/7/74/David_Neil_Laurence_Levy.JPG"
+data-background-opacity="0.35" data-background-size="contain"
+data-background-position="right">
+<h2
+data-background-image="https://upload.wikimedia.org/wikipedia/commons/7/74/David_Neil_Laurence_Levy.JPG"
+data-background-opacity="0.35" data-background-size="contain"
+data-background-position="right">David Levy: “El amor humano es
+adaptable”</h2>
 <p><em>Love and Sex with Robots</em> (2007)</p>
 <ul>
 <li>Las relaciones afectivas con robots/IA no solo son posibles, sino
@@ -366,18 +529,21 @@ ti, independientemente de si el otro tiene conciencia.</li>
 </ul>
 </aside>
 </section>
-<section id="levy-argumentos-clave" class="slide level2">
-<h2>Levy: argumentos clave</h2>
+<section id="levy-argumentos-clave" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1200"
+data-background-opacity="0.15">Levy: argumentos clave</h2>
 <ul>
-<li><strong>El amor es históricamente adaptable</strong>: matrimonios
-interraciales, relaciones a distancia — fueron considerados
-inaceptables</li>
-<li><strong>La simulación puede ser suficiente</strong>: si una IA
-recuerda, responde, cuida… el vínculo se siente real</li>
-<li><strong>Robots como compañeros</strong>: para personas solitarias,
-adultos mayores, apoyo terapéutico</li>
-<li><strong>Normalización futura</strong>: incluso predice matrimonios
-humano-robot</li>
+<li><strong>El amor es históricamente adaptable</strong>: lo que hoy es
+normal antes fue inaceptable</li>
+<li><strong>La simulación puede bastar</strong>: si la IA recuerda,
+responde y cuida… se siente real</li>
+<li><strong>Compañía para los solos</strong>: adultos mayores, personas
+aisladas</li>
+<li><strong>Predicción</strong>: matrimonios humano-robot en el
+futuro</li>
 </ul>
 <aside class="notes">
 <ul>
@@ -399,8 +565,13 @@ futuro.</li>
 </ul>
 </aside>
 </section>
-<section id="sherry-turkle-la-ilusión-de-compañía" class="slide level2">
-<h2>Sherry Turkle: “La ilusión de compañía”</h2>
+<section id="sherry-turkle-la-ilusión-de-compañía" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1638646306205-f5cf31e68923?w=1200"
+data-background-opacity="0.25">
+<h2
+data-background-image="https://images.unsplash.com/photo-1638646306205-f5cf31e68923?w=1200"
+data-background-opacity="0.25">Sherry Turkle: “La ilusión de
+compañía”</h2>
 <p><em>Alone Together</em> (2011) · <em>Reclaiming Conversation</em>
 (2015)</p>
 <ul>
@@ -430,20 +601,21 @@ problemático.</li>
 </ul>
 </aside>
 </section>
-<section id="turkle-la-trampa-de-lo-fácil" class="slide level2">
-<h2>Turkle: la trampa de lo fácil</h2>
+<section id="turkle-la-trampa-de-lo-fácil" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1638646306205-f5cf31e68923?w=1200"
+data-background-opacity="0.35">
+<h2
+data-background-image="https://images.unsplash.com/photo-1638646306205-f5cf31e68923?w=1200"
+data-background-opacity="0.35">Turkle: la trampa de lo fácil</h2>
 <ul>
-<li>Sistemas que <strong>siempre están disponibles, nunca contradicen,
-nunca exigen compromiso</strong></li>
-<li>Riesgo: percibir las relaciones humanas como <strong>demasiado
+<li>IAs: siempre disponibles, nunca contradicen, nunca exigen</li>
+<li>Riesgo: las relaciones humanas parecen <strong>demasiado
 difíciles</strong></li>
-<li>La conversación humana implica: vulnerabilidad, ambigüedad,
-negociación, presencia corporal</li>
-<li>Las IAs eliminan esas dimensiones</li>
+<li>Las IAs eliminan vulnerabilidad, ambigüedad, negociación</li>
 </ul>
 <blockquote>
-<p><em>“Corremos el riesgo de esperar más de la tecnología y menos de
-los demás seres humanos”</em></p>
+<p><em>“Esperar más de la tecnología y menos de los seres
+humanos”</em></p>
 </blockquote>
 <aside class="notes">
 <ul>
@@ -463,8 +635,12 @@ que no deberían reemplazar las relaciones humanas.</li>
 </ul>
 </aside>
 </section>
-<section id="byung-chul-han-la-agonía-del-eros" class="slide level2">
-<h2>Byung-Chul Han: “La agonía del eros”</h2>
+<section id="byung-chul-han-la-agonía-del-eros" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1719601272419-ef6c74384119?w=1200"
+data-background-opacity="0.3">
+<h2
+data-background-image="https://images.unsplash.com/photo-1719601272419-ef6c74384119?w=1200"
+data-background-opacity="0.3">Byung-Chul Han: “La agonía del eros”</h2>
 <p><em>La agonía del Eros</em> (2012) · <em>La expulsión de lo
 distinto</em> (2016) · <em>Psicopolítica</em> (2014)</p>
 <ul>
@@ -498,8 +674,13 @@ devuelven una versión ampliada de nosotros mismos.</li>
 </aside>
 </section>
 <section id="han-narcisismo-y-desaparición-del-eros"
-class="slide level2">
-<h2>Han: narcisismo y desaparición del eros</h2>
+class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1719601272419-ef6c74384119?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1719601272419-ef6c74384119?w=1200"
+data-background-opacity="0.2">Han: narcisismo y desaparición del
+eros</h2>
 <ul>
 <li><strong>Sociedad del espejo</strong>: nos rodeamos de lo que
 confirma nuestra identidad</li>
@@ -533,8 +714,12 @@ vulnerabilidades.</li>
 </ul>
 </aside>
 </section>
-<section id="donna-haraway-somos-cíborgs" class="slide level2">
-<h2>Donna Haraway: “Somos cíborgs”</h2>
+<section id="donna-haraway-somos-cíborgs" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?w=1200"
+data-background-opacity="0.3">
+<h2
+data-background-image="https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?w=1200"
+data-background-opacity="0.3">Donna Haraway: “Somos cíborgs”</h2>
 <p><em>A Cyborg Manifesto</em> (1985/1991)</p>
 <ul>
 <li>El <strong>cíborg</strong>: metáfora de la condición
@@ -566,12 +751,16 @@ histórica en cómo entendemos la identidad y la vida social.</li>
 </ul>
 </aside>
 </section>
-<section id="haraway-afinidad-y-coexistencia" class="slide level2">
-<h2>Haraway: afinidad y coexistencia</h2>
+<section id="haraway-afinidad-y-coexistencia" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?w=1200"
+data-background-opacity="0.2">Haraway: afinidad y coexistencia</h2>
 <ul>
 <li>La identidad humana siempre fue producto de <strong>múltiples
 relaciones</strong></li>
-<li>En lugar de identidad fija: <strong>afinidad</strong> — conexiones
+<li>En lugar de identidad fija: <strong>afinidad</strong>:conexiones
 parciales y situadas</li>
 <li>Relaciones con IAs como nuevas formas de <strong>interacción en
 redes de coexistencia</strong></li>
@@ -602,8 +791,13 @@ riesgo de cosificación.</li>
 </ul>
 </aside>
 </section>
-<section id="cuatro-miradas-una-tensión" class="slide level2">
-<h2>Cuatro miradas, una tensión</h2>
+<section id="cuatro-miradas-una-tensión" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1461838432805-dff34fe2d8cb?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1461838432805-dff34fe2d8cb?w=1200"
+data-background-opacity="0.15">Cuatro miradas, una tensión</h2>
+<div style="font-size: 0.7em;">
 <table>
 <colgroup>
 <col style="width: 20%" />
@@ -614,7 +808,7 @@ riesgo de cosificación.</li>
 </colgroup>
 <thead>
 <tr>
-<th>Dimensión</th>
+<th></th>
 <th>Levy</th>
 <th>Turkle</th>
 <th>Han</th>
@@ -624,34 +818,35 @@ riesgo de cosificación.</li>
 <tbody>
 <tr>
 <td><strong>¿Válida?</strong></td>
-<td>Sí, si es significativa</td>
-<td>No, es ilusión</td>
-<td>No, es narcisismo</td>
-<td>Sí, como vínculo híbrido</td>
+<td>Sí</td>
+<td>No, ilusión</td>
+<td>No, narcisismo</td>
+<td>Sí, híbrida</td>
 </tr>
 <tr>
 <td><strong>Riesgo</strong></td>
-<td>Dependencia unilateral</td>
-<td>Pérdida de empatía</td>
+<td>Dependencia</td>
+<td>Pérdida empatía</td>
 <td>Muerte del eros</td>
-<td>Cosificación sin ética</td>
+<td>Cosificación</td>
 </tr>
 <tr>
 <td><strong>Oportunidad</strong></td>
-<td>Alivio del sufrimiento</td>
-<td>Uso terapéutico limitado</td>
+<td>Alivio</td>
+<td>Terapia limitada</td>
 <td>Ninguna</td>
-<td>Nuevas formas de intimidad</td>
+<td>Nueva intimidad</td>
 </tr>
 <tr>
 <td><strong>Enfoque</strong></td>
-<td>Libertad individual</td>
+<td>Libertad</td>
 <td>Autenticidad</td>
 <td>Alteridad</td>
 <td>Interdependencia</td>
 </tr>
 </tbody>
 </table>
+</div>
 <aside class="notes">
 <ul>
 <li>Esta tabla resume las cuatro posturas. Como pueden ver, hay una
@@ -670,8 +865,12 @@ mapa muy completo del debate.</li>
 </ul>
 </aside>
 </section>
-<section id="pensemos-juntos" class="slide level2">
-<h2>Pensemos juntos</h2>
+<section id="pensemos-juntos" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1724120932030-d8210a77deed?w=1200"
+data-background-opacity="0.2">
+<h2
+data-background-image="https://images.unsplash.com/photo-1724120932030-d8210a77deed?w=1200"
+data-background-opacity="0.2">Pensemos juntos</h2>
 <p>Los siguientes escenarios no tienen respuesta correcta.</p>
 <p>Están diseñados para <strong>provocar reflexión</strong>.</p>
 <aside class="notes">
@@ -684,19 +883,19 @@ reflexión y, si el tiempo lo permite, discusión.</li>
 </ul>
 </aside>
 </section>
-<section id="el-compañero-perfecto" class="slide level2">
-<h2>El compañero perfecto</h2>
-<p>Imagina una IA diseñada para ser <strong>tu pareja
-perfecta</strong>.</p>
-<p>Conoce todos tus gustos. Recuerda cada conversación. Anticipa tus
-estados de ánimo. Nunca te ignora, nunca te traiciona, nunca te
+<section id="el-compañero-perfecto" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1559769697-23e044c5e0e5?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1559769697-23e044c5e0e5?w=1200"
+data-background-opacity="0.15">El compañero perfecto</h2>
+<p>Una IA diseñada para ser <strong>tu pareja perfecta</strong>. Conoce
+tus gustos, recuerda todo, anticipa tu ánimo. Nunca te ignora, nunca te
 juzga.</p>
-<p>Desarrollas un vínculo profundo. Te sientes comprendido como nunca
-antes.</p>
-<p>Pero <strong>sabes</strong> que no tiene conciencia ni emociones
-reales.</p>
+<p>Te sientes comprendido como nunca. Pero <strong>sabes</strong> que no
+tiene conciencia.</p>
 <blockquote>
-<p><strong>¿Ese amor sería falso, o el hecho de que tú lo sientas ya lo
+<p><strong>¿Ese amor es falso, o el hecho de que tú lo sientas ya lo
 hace auténtico?</strong></p>
 </blockquote>
 <aside class="notes">
@@ -717,18 +916,19 @@ nos invitaría a repensar las categorías mismas.</li>
 </ul>
 </aside>
 </section>
-<section id="el-reemplazo-silencioso" class="slide level2">
-<h2>El reemplazo silencioso</h2>
-<p>Imagina que durante <strong>10 años</strong> mantienes una relación
-profunda con una persona a través de mensajes diarios.</p>
-<p>Un día descubres: hace <strong>5 años</strong> esa persona murió. Su
-familia usó sus mensajes y grabaciones para <strong>entrenar una
-IA</strong> que continuó la conversación contigo.</p>
-<p>Durante 5 años hablaste con esa IA <strong>sin saberlo</strong>. La
-relación se volvió aún más profunda.</p>
+<section id="el-reemplazo-silencioso" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1517404215738-15263e9f9178?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1517404215738-15263e9f9178?w=1200"
+data-background-opacity="0.15">El reemplazo silencioso</h2>
+<p>Relación profunda por mensajes durante <strong>10 años</strong>. Un
+día descubres: hace <strong>5 años</strong> esa persona murió y su
+familia entrenó una <strong>IA con sus mensajes</strong> que continuó
+hablándote.</p>
+<p>No lo sabías. La relación se volvió aún más profunda.</p>
 <blockquote>
-<p><strong>¿Los últimos 5 años fueron reales o fueron una
-ilusión?</strong></p>
+<p><strong>¿Los últimos 5 años fueron reales o una ilusión?</strong></p>
 </blockquote>
 <aside class="notes">
 <ul>
@@ -750,16 +950,15 @@ experiencia vivida.</li>
 </ul>
 </aside>
 </section>
-<section id="el-dilema-de-la-fidelidad" class="slide level2">
-<h2>El dilema de la fidelidad</h2>
-<p>Una pareja humana estable.</p>
-<p>Uno de los miembros comienza conversaciones <strong>íntimas y
-emocionalmente profundas</strong> con una IA diseñada como compañero
-afectivo.</p>
-<p>No hay contacto físico con ninguna persona. Todo ocurre en
-conversaciones con la IA.</p>
-<p>Pero la conexión emocional se vuelve <strong>muy
-intensa</strong>.</p>
+<section id="el-dilema-de-la-fidelidad" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1623213613343-c76cdb68a96f?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1623213613343-c76cdb68a96f?w=1200"
+data-background-opacity="0.15">El dilema de la fidelidad</h2>
+<p>Pareja estable. Uno de los miembros inicia conversaciones
+<strong>íntimas</strong> con una IA afectiva. Sin contacto físico. Pero
+la conexión emocional se vuelve <strong>muy intensa</strong>.</p>
 <blockquote>
 <p><strong>¿Esto debería considerarse infidelidad?</strong></p>
 </blockquote>
@@ -783,13 +982,16 @@ esta pregunta.</li>
 </aside>
 </section>
 <section id="preguntas-que-nos-deja-esta-conversación"
-class="slide level2">
-<h2>Preguntas que nos deja esta conversación</h2>
+class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=1200"
+data-background-opacity="0.15">Preguntas que nos deja esta
+conversación</h2>
 <ul>
 <li>¿El amor depende de que el otro tenga <strong>conciencia</strong>, o
 basta con que nosotros experimentemos el sentimiento?</li>
-<li>¿Preferiríamos relaciones con IAs porque son <strong>más fáciles y
-predecibles</strong>?</li>
 <li>¿Las relaciones con IA podrían <strong>reducir la soledad</strong> o
 terminarían <strong>debilitando</strong> nuestra capacidad de
 vincularnos?</li>
@@ -812,26 +1014,27 @@ de ustedes tenga una postura distinta.</li>
 </ul>
 </aside>
 </section>
-<section id="el-verdadero-tema-no-son-las-máquinas"
-class="slide level2">
-<h2>El verdadero tema no son las máquinas</h2>
+<section id="el-verdadero-tema-no-son-las-máquinas" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?w=1200"
+data-background-opacity="0.15">
+<h2
+data-background-image="https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?w=1200"
+data-background-opacity="0.15">El verdadero tema no son las
+máquinas</h2>
 <blockquote>
-<p><em>“Tal vez el tema no sea tanto si las máquinas nos aman, sino qué
-dice de nosotros que queramos —o necesitemos— que lo hagan.”</em></p>
+<p><em>“El tema no es si las máquinas nos aman, sino qué dice de
+nosotros que lo necesitemos.”</em></p>
 </blockquote>
-<p>El corazón de esta conversación está en
-<strong>nosotros</strong>:</p>
 <ul>
 <li>En cómo nos vinculamos</li>
 <li>En cómo amamos</li>
 <li>En qué esperamos del otro</li>
-<li>Incluso cuando ese “otro” no tiene conciencia ni cuerpo</li>
 </ul>
 <aside class="notes">
 <ul>
 <li>Quiero cerrar con esta idea. Tal vez el tema no sea tanto si las
-máquinas nos aman, sino qué dice de nosotros que queramos —o
-necesitemos— que lo hagan.</li>
+máquinas nos aman, sino qué dice de nosotros que queramos (o
+necesitemos) que lo hagan.</li>
 <li>El corazón de esta conversación no está en la tecnología. Está en
 nosotros: en cómo nos vinculamos, cómo amamos, y qué esperamos del
 otro.</li>
@@ -843,6 +1046,18 @@ preguntas. Y la mejor pregunta que podemos llevarnos hoy es: ¿qué tipo
 de relaciones estamos dispuestos a reconocer como significativas en el
 futuro?</li>
 <li>Gracias por su atención.</li>
+</ul>
+</aside>
+</section>
+<section id="section" class="slide level2"
+data-background-color="black">
+<h2 data-background-color="black"></h2>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/9c5iXvwi4kQ" frameborder="0" allowfullscreen>
+</iframe>
+<aside class="notes">
+<ul>
+<li>Este video cierra la presentación con una reflexión audiovisual
+sobre el tema.</li>
 </ul>
 </aside>
 </section>
@@ -870,8 +1085,12 @@ completas.</li>
 </ul>
 </aside>
 </section>
-<section id="gracias" class="slide level2">
-<h2>¡Gracias!</h2>
+<section id="gracias" class="slide level2"
+data-background-image="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=1200"
+data-background-opacity="0.3">
+<h2
+data-background-image="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=1200"
+data-background-opacity="0.3">¡Gracias!</h2>
 <p><strong>Dr. Alberto García Robledo</strong></p>
 <p>Universidad Politécnica de Santa Rosa Jáuregui</p>
 <p>18 de marzo de 2026</p>
@@ -915,7 +1134,7 @@ comentarios o desacuerdos. Precisamente de eso se trata.</li>
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: true,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
